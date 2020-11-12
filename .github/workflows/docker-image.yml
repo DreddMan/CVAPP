@@ -32,4 +32,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: wongsaang/chatgpt-ui-client:latest,wongsaang/cha
+        tags: wongsaang/chatgpt-ui-client:latest,wongsaang/chatgpt-ui-client:${{ github.ref_name }}
