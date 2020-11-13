@@ -4,4 +4,12 @@ WORKDIR /app
 
 COPY package.json yarn.lock ./
 
-RUN yarn instal
+RUN yarn install
+
+COPY . .
+
+RUN yarn generate
+
+
+FROM nginx:alpine
+
