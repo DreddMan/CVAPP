@@ -13,3 +13,6 @@ RUN yarn generate
 
 FROM nginx:alpine
 
+WORKDIR /app
+
+COPY --from=builder /app/.outp
