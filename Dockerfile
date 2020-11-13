@@ -15,4 +15,6 @@ FROM nginx:alpine
 
 WORKDIR /app
 
-COPY --from=builder /app/.outp
+COPY --from=builder /app/.output/public .
+
+COPY nginx.conf /etc/ng
