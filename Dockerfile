@@ -17,4 +17,5 @@ WORKDIR /app
 
 COPY --from=builder /app/.output/public .
 
-COPY nginx.conf /etc/ng
+COPY nginx.conf /etc/nginx/templates/default.conf.template
+
