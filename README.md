@@ -69,3 +69,47 @@ Before you can start chatting, you need to add an OpenAI API key. In the Setting
 Now you can access the web client at `http(s)://your.domain` or `http://123.123.123.123` to start chatting.
 
 🎉🎉🎉 Enjoy it!
+
+## Quick start with Docker Compose
+
+### Run services
+
+Below is a docker-compose.yml template:
+
+```yaml
+version: '3'
+services:
+  client:
+    image: wongsaang/chatgpt-ui-client:latest
+    environment:
+      - SERVER_DOMAIN=http://backend-web-server
+      - NUXT_PUBLIC_APP_NAME='ChatGPT UI' # App name
+      - NUXT_PUBLIC_TYPEWRITER=true # Enable typewriter effect, default is false
+      - NUXT_PUBLIC_TYPEWRITER_DELAY=100 # Typewriter effect delay time, default is 50ms
+    depends_on:
+      - backend-web-server
+    ports:
+      - '80:80'
+    networks:
+      - chatgpt_ui_network
+  backend-wsgi-server:
+    image: wongsaang/chatgpt-ui-wsgi-server:latest
+    environment:
+      - APP_DOMAIN=${APP_DOMAIN:-localhost:9000} # CSRF whitelist，Add the address of your chatgpt-ui-web-server here, default is localhost:9000
+      #- DB_URL=postgres://postgres:postgrespw@localhost:49153/chatgpt # If this parameter is not set, the built-in Sqlite will be used by default. It should be noted that if you do not connect to an external database, the data will be lost after the container is destroyed.
+      #- OPENAI_API_PROXY=https://openai.proxy.com/v1 # Proxy for https://api.openai.com/v1
+      - DJANGO_SUPERUSER_USERNAME=admin # default superuser name
+      - DJANGO_SUPERUSER_PASSWORD=password # default superuser password
+      - DJANGO_SUPERUSER_EMAIL=admin@example.com # default superuser email
+      # If you want to use the email verification function, you need to configure the following parameters
+    #      - EMAIL_HOST=SMTP server address
+    #      - EMAIL_PORT=SMTP server port
+    #      - EMAIL_HOST_USER=
+    #      - EMAIL_HOST_PASSWORD=
+    #      - EMAIL_USE_TLS=True
+    ports:
+      - '8000:8000'
+    networks:
+      - chatgpt_ui_network
+  backend-web-server:
+    image: wongsaang/chatgpt-ui-web-server:latest
