@@ -113,3 +113,55 @@ services:
       - chatgpt_ui_network
   backend-web-server:
     image: wongsaang/chatgpt-ui-web-server:latest
+    environment:
+      - BACKEND_URL=http://backend-wsgi-server:8000
+    ports:
+      - '9000:80'
+    depends_on:
+      - backend-wsgi-server
+    networks:
+      - chatgpt_ui_network
+
+networks:
+  chatgpt_ui_network:
+    driver: bridge
+```
+
+### DB_URL schema
+
+| Engine               | URL                                              |
+|----------------------|--------------------------------------------------|
+| PostgreSQL           | ``postgres://USER:PASSWORD@HOST:PORT/NAME``      |
+| MySQL                | ``mysql://USER:PASSWORD@HOST:PORT/NAME``         |
+| SQLite               | ``sqlite:///PATH``                               |
+
+
+### Set API key
+
+Access `http(s)://your.domain:9000/admin` / IP `http(s)://123.123.123.123:9000/admin` to log in to the administration panel.
+
+Default superuser: `admin`
+
+Default password: `password`
+
+Before you can start chatting, you need to add an OpenAI API key. In the Settings model, add a record with the name `openai_api_key` and the value as your API key.
+
+Now you can access the web client at `http(s)://your.domain` or `http://123.123.123.123` to start chatting.
+
+## Development
+
+### Setup
+
+Make sure to install the dependencies:
+
+```bash
+# yarn
+yarn install
+```
+
+### Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+yarn dev
