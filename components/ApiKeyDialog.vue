@@ -4,4 +4,7 @@
       persistent
   >
     <template v-slot:activator="{ props }">
-      <v-list-
+      <v-list-item
+          rounded="xl"
+          v-bind="props"
+ 
