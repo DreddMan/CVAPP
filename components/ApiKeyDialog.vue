@@ -7,4 +7,5 @@
       <v-list-item
           rounded="xl"
           v-bind="props"
- 
+          prepend-icon="vpn_key"
+          color
