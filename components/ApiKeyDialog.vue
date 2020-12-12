@@ -11,3 +11,6 @@
           color="primary"
       >
         {{ $t('setApiKey') }}
+      </v-list-item>
+    </template>
+   
