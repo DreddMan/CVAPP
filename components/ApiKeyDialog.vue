@@ -17,4 +17,7 @@
       <v-card-title>
         <span class="text-h5">{{ $t('openAIApiKey') }}</span>
       </v-card-title>
-      <v-divider></v-divider
+      <v-divider></v-divider>
+      <v-card-text>
+        <div>
+          {{ $
