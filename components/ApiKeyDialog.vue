@@ -20,4 +20,5 @@
       <v-divider></v-divider>
       <v-card-text>
         <div>
-          {{ $
+          {{ $t('getAKey') }}:
+          <a target="_blank" href
