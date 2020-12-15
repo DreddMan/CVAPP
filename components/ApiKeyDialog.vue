@@ -15,4 +15,5 @@
     </template>
     <v-card>
       <v-card-title>
-        <span class="text
+        <span class="text-h5">{{ $t('openAIApiKey') }}</span>
+      <
