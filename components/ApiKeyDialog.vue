@@ -21,4 +21,4 @@
       <v-card-text>
         <div>
           {{ $t('getAKey') }}:
-          <a target="_blank" href
+          <a target="_blank" href="https://platform.openai.com/account
