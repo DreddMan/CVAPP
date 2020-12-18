@@ -27,4 +27,6 @@
             class="mt-5 d-flex align-center"
         >
           <v-text-field
-              v-model="api
+              v-model="apiKey"
+              label="Api Key"
+              hide-de
