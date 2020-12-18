@@ -23,4 +23,7 @@
           {{ $t('getAKey') }}:
           <a target="_blank" href="https://platform.openai.com/account/api-keys">https://platform.openai.com/account/api-keys</a>
         </div>
-        
+        <div
+            class="mt-5 d-flex align-center"
+        >
+    
