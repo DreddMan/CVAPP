@@ -26,4 +26,5 @@
         <div
             class="mt-5 d-flex align-center"
         >
-    
+          <v-text-field
+              v-model="api
