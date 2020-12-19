@@ -34,3 +34,6 @@
               :disabled="!editable"
           ></v-text-field>
           <div
+              v-if="editable"
+          >
+     
