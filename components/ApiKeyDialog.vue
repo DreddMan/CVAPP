@@ -29,4 +29,6 @@
           <v-text-field
               v-model="apiKey"
               label="Api Key"
-              hide-de
+              hide-details
+              clearable
+              :disabled="!editable
