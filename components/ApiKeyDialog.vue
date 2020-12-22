@@ -36,4 +36,6 @@
           <div
               v-if="editable"
           >
-            <v-btn class="ml-3" icon="done" @click="s
+            <v-btn class="ml-3" icon="done" @click="save"></v-btn>
+          </div>
+          
