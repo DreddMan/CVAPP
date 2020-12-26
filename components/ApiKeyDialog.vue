@@ -41,4 +41,5 @@
           <div
               v-else
           >
-            <v-btn class="ml-3" icon="
+            <v-btn class="ml-3" icon="edit" @click="editable = true"></v-btn>
+          
