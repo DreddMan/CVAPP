@@ -46,4 +46,6 @@
         </div>
       </v-card-text>
       <v-divider></v-divider>
-      <v-card-acti
+      <v-card-actions>
+        <v-alert
+            v-if="wa
