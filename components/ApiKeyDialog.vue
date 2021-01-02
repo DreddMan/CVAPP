@@ -50,4 +50,6 @@
         <v-alert
             v-if="warningText"
             density="compact"
-            
+            type="warning"
+            :text="warningText"
+ 
