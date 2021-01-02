@@ -48,4 +48,6 @@
       <v-divider></v-divider>
       <v-card-actions>
         <v-alert
-            v-if="wa
+            v-if="warningText"
+            density="compact"
+            
