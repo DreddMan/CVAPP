@@ -55,4 +55,5 @@
         ></v-alert>
         <v-spacer></v-spacer>
         <v-btn
-            color="pr
+            color="primary"
+            @click="dialog = fal
