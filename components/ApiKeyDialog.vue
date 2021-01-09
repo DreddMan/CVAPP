@@ -62,4 +62,8 @@
         </v-btn>
       </v-card-actions>
     </v-card>
-  </v-di
+  </v-dialog>
+</template>
+
+<script setup>
+const dialo
