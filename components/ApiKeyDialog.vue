@@ -66,4 +66,6 @@
 </template>
 
 <script setup>
-const dialo
+const dialog = ref(false)
+const apiKey = useApiKey()
+const input
