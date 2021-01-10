@@ -70,4 +70,5 @@ const dialog = ref(false)
 const apiKey = useApiKey()
 const inputApiKey = ref('')
 const editable = ref(false)
-const 
+const warningText = ref(null)
+const showWarning = (text)
