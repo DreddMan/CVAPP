@@ -68,4 +68,6 @@
 <script setup>
 const dialog = ref(false)
 const apiKey = useApiKey()
-const input
+const inputApiKey = ref('')
+const editable = ref(false)
+const 
