@@ -73,4 +73,5 @@ const editable = ref(false)
 const warningText = ref(null)
 const showWarning = (text) => {
   warningText.value = text
-  setTimeout(
+  setTimeout(() => {
+    warningText.value = null
