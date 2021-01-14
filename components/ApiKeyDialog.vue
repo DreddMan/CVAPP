@@ -78,4 +78,5 @@ const showWarning = (text) => {
   }, 3000)
 }
 const save = async () => {
-  setApiK
+  setApiKey(apiKey.value)
+  editable.value = false
