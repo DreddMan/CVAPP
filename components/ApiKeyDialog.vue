@@ -80,3 +80,5 @@ const showWarning = (text) => {
 const save = async () => {
   setApiKey(apiKey.value)
   editable.value = false
+}
+</script>
