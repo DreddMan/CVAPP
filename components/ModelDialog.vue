@@ -84,3 +84,39 @@
     </v-card>
   </v-dialog>
 </template>
+
+<script setup>
+const { $i18n } = useNuxtApp()
+const dialog = ref(false)
+const models = useModels()
+const currentModel = useCurrentModel()
+const inputModel = ref('')
+const showInputModel = ref(false)
+const warningText = ref(null)
+const showWarning = (text) => {
+  warningText.value = text
+  setTimeout(() => {
+    warningText.value = null
+  }, 3000)
+}
+const createNewModel = () => {
+  models.value.push(inputModel.value)
+  inputModel.value = ''
+  showInputModel.value = false
+}
+const removeModel = (index) => {
+  if (currentModel.value === models.value[index]) {
+    currentModel.value = null
+  }
+  models.value.splice(index, 1)
+}
+const save = async () => {
+  if (!currentModel.value) {
+    showWarning($i18n.t('pleaseSelectAtLeastOneModelDot'))
+    return
+  }
+  setModels(models.value)
+  setCurrentModel(currentModel.value)
+  dialog.value = false
+}
+</script>
