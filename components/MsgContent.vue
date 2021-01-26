@@ -6,4 +6,5 @@ import copy from 'copy-to-clipboard'
 
 const md = new MarkdownIt({
   linkify: true,
-  highlight
+  highlight(code, lang) {
+    const langua
