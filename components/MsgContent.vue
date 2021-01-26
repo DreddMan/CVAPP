@@ -4,4 +4,6 @@ import MarkdownIt from 'markdown-it'
 import copy from 'copy-to-clipboard'
 
 
-const md = new MarkdownI
+const md = new MarkdownIt({
+  linkify: true,
+  highlight
