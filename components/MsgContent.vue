@@ -7,4 +7,4 @@ import copy from 'copy-to-clipboard'
 const md = new MarkdownIt({
   linkify: true,
   highlight(code, lang) {
-    const langua
+    const language = hljs.getLanguage(lang) ? lang : 'plai
