@@ -8,4 +8,4 @@ const md = new MarkdownIt({
   linkify: true,
   highlight(code, lang) {
     const language = hljs.getLanguage(lang) ? lang : 'plaintext'
-    return `<pre class="hljs-code-container my-3"><div class="hljs-code-header d-flex align-center justi
+    return `<pre class="hljs-code-container my-3"><div class="hljs-code-header d-flex align-center justify-space-between bg-grey-dark
