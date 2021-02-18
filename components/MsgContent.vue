@@ -14,4 +14,6 @@ const md = new MarkdownIt({
 
 const props = defineProps(['content'])
 
-const
+const contentHtml = ref('')
+
+const contentElm = ref(nu
