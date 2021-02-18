@@ -19,4 +19,7 @@ const contentHtml = ref('')
 const contentElm = ref(null)
 
 watchEffect(() => {
-  contentHtml.value = props.con
+  contentHtml.value = props.content ? md.render(props.content) : ''
+})
+
+const bindCop
