@@ -16,4 +16,7 @@ const props = defineProps(['content'])
 
 const contentHtml = ref('')
 
-const contentElm = ref(nu
+const contentElm = ref(null)
+
+watchEffect(() => {
+  contentHtml.value = props.con
