@@ -22,4 +22,5 @@ watchEffect(() => {
   contentHtml.value = props.content ? md.render(props.content) : ''
 })
 
-const bindCop
+const bindCopyCodeToButtons = () => {
+  if (!contentElm.value)
