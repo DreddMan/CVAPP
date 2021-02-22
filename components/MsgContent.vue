@@ -23,4 +23,7 @@ watchEffect(() => {
 })
 
 const bindCopyCodeToButtons = () => {
-  if (!contentElm.value)
+  if (!contentElm.value) {
+    return
+  }
+  contentElm.value.querySelectorA
