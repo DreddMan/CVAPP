@@ -27,4 +27,5 @@ const bindCopyCodeToButtons = () => {
     return
   }
   contentElm.value.querySelectorAll('.hljs-code-container').forEach((codeContainer) => {
-    const copyButton = code
+    const copyButton = codeContainer.querySelector('.hljs-copy-button');
+    c
