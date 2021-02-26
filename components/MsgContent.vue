@@ -30,4 +30,6 @@ const bindCopyCodeToButtons = () => {
     const copyButton = codeContainer.querySelector('.hljs-copy-button');
     const codeBody = codeContainer.querySelector('code');
     copyButton.onclick = function () {
+      copy(codeBody.textContent ?? '');
+
       copy
