@@ -32,4 +32,5 @@ const bindCopyCodeToButtons = () => {
     copyButton.onclick = function () {
       copy(codeBody.textContent ?? '');
 
-      copy
+      copyButton.innerHTML = "Copied!";
+      copyB
