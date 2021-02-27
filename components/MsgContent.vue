@@ -35,4 +35,5 @@ const bindCopyCodeToButtons = () => {
       copyButton.innerHTML = "Copied!";
       copyButton.dataset.copied = 'true';
 
-      setTimeout(()
+      setTimeout(() => {
+        copyButton.innerHTML = "C
