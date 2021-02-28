@@ -37,4 +37,10 @@ const bindCopyCodeToButtons = () => {
 
       setTimeout(() => {
         copyButton.innerHTML = "Copy";
-        copyButton.dataset.copied = 'false
+        copyButton.dataset.copied = 'false';
+      }, 2000);
+    };
+  })
+}
+
+onMounted(() =
