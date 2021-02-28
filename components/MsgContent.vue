@@ -36,4 +36,5 @@ const bindCopyCodeToButtons = () => {
       copyButton.dataset.copied = 'true';
 
       setTimeout(() => {
-        copyButton.innerHTML = "C
+        copyButton.innerHTML = "Copy";
+        copyButton.dataset.copied = 'false
