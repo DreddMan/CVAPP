@@ -48,3 +48,7 @@ onMounted(() => {
 })
 
 onUpdated(() => {
+  bindCopyCodeToButtons()
+})
+
+</script>
