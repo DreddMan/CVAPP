@@ -43,4 +43,8 @@ const bindCopyCodeToButtons = () => {
   })
 }
 
-onMounted(() =
+onMounted(() => {
+  bindCopyCodeToButtons()
+})
+
+onUpdated(() => {
