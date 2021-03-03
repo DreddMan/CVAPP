@@ -52,3 +52,7 @@ onUpdated(() => {
 })
 
 </script>
+
+<template>
+  <div
+      ref="contentElm
