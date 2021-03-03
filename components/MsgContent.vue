@@ -55,4 +55,6 @@ onUpdated(() => {
 
 <template>
   <div
-      ref="contentElm
+      ref="contentElm"
+      v-html="contentHtml"
+      clas
