@@ -62,3 +62,7 @@ onUpdated(() => {
 </template>
 
 <style>
+.chat-msg-content ol {
+  padding-left: 2em;
+}
+.hlj
