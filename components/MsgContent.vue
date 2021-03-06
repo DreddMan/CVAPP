@@ -57,4 +57,8 @@ onUpdated(() => {
   <div
       ref="contentElm"
       v-html="contentHtml"
-      clas
+      class="chat-msg-content"
+  ></div>
+</template>
+
+<style>
