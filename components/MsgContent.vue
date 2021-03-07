@@ -65,4 +65,6 @@ onUpdated(() => {
 .chat-msg-content ol {
   padding-left: 2em;
 }
-.hlj
+.hljs-code-container {
+  border-radius: 3px;
+  over
