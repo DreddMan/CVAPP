@@ -67,4 +67,6 @@ onUpdated(() => {
 }
 .hljs-code-container {
   border-radius: 3px;
-  over
+  overflow: hidden;
+}
+.hljs-copy-button{
