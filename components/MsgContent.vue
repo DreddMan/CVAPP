@@ -70,3 +70,4 @@ onUpdated(() => {
   overflow: hidden;
 }
 .hljs-copy-button{
+  width:2rem;height:2rem;text-indent:-
