@@ -71,4 +71,5 @@ onUpdated(() => {
 }
 .hljs-copy-button{
   width:2rem;height:2rem;text-indent:-9999px;color:#fff;
-  border-radius:.25rem;border:1px
+  border-radius:.25rem;border:1px solid #ffffff22;
+  background-image:url('data:image/
