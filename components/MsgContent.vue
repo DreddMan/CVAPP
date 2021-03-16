@@ -72,4 +72,4 @@ onUpdated(() => {
 .hljs-copy-button{
   width:2rem;height:2rem;text-indent:-9999px;color:#fff;
   border-radius:.25rem;border:1px solid #ffffff22;
-  background-image:url('data:image/
+  background-image:url('data:image/svg+xml;utf-8,<svg width="16" height="16" viewBox
