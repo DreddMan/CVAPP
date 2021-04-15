@@ -76,4 +76,5 @@ onUpdated(() => {
   background-repeat:no-repeat;background-position:center;
   transition:background-color 200ms ease,transform 200ms ease-out
 }
-.hljs-copy-button:hover{border-color:#f
+.hljs-copy-button:hover{border-color:#ffffff44}
+.hljs-copy-button:active{border
