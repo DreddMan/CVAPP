@@ -79,4 +79,5 @@ onUpdated(() => {
 .hljs-copy-button:hover{border-color:#ffffff44}
 .hljs-copy-button:active{border-color:#ffffff66}
 .hljs-copy-button[data-copied="true"]{text-indent:0;width:auto;background-image:none}
-@media(prefers
+@media(prefers-reduced-motion){.hljs-copy-button{transition:none}}
+<
