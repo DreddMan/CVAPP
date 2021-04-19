@@ -9,4 +9,5 @@
       :loading="loading"
       :hide-details="true"
       append-inner-icon="send"
-      @keyup.enter.exact="enter
+      @keyup.enter.exact="enterOnly"
+      @click:appendInner="clickSe
