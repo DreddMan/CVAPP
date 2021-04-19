@@ -4,4 +4,5 @@
       :label="$t('writeAMessage')"
       :placeholder="hint"
       rows="1"
- 
+      :auto-grow="autoGrow"
+      :disabl
