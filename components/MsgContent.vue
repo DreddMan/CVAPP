@@ -80,4 +80,4 @@ onUpdated(() => {
 .hljs-copy-button:active{border-color:#ffffff66}
 .hljs-copy-button[data-copied="true"]{text-indent:0;width:auto;background-image:none}
 @media(prefers-reduced-motion){.hljs-copy-button{transition:none}}
-<
+</style>
