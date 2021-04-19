@@ -10,4 +10,9 @@
       :hide-details="true"
       append-inner-icon="send"
       @keyup.enter.exact="enterOnly"
-      @click:appendInner="clickSe
+      @click:appendInner="clickSendBtn"
+  ></v-textarea>
+</template>
+
+<script>
+impor
