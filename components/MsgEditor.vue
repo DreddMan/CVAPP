@@ -1,3 +1,4 @@
 <template>
   <v-textarea
-      v-model="mes
+      v-model="message"
+      :label="$t('writeAMessage
