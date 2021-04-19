@@ -7,4 +7,5 @@
       :auto-grow="autoGrow"
       :disabled="disabled"
       :loading="loading"
-      :
+      :hide-details="true"
+      append-inner-icon
