@@ -8,4 +8,5 @@
       :disabled="disabled"
       :loading="loading"
       :hide-details="true"
-      append-inner-icon
+      append-inner-icon="send"
+      @keyup.enter.exact="enter
