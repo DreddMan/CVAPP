@@ -32,4 +32,4 @@ export default {
   },
   computed: {
     hint() {
-      return isMobile() ? "" : "Press Enter to send your 
+      return isMobile() ? "" : "Press Enter to send your message or Shift+Enter to add a new
