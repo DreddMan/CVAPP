@@ -17,3 +17,6 @@
 <script>
 import { isMobile } from 'is-mobile'
 export default {
+  name: "MsgEditor",
+  props: {
+    sendMessage: Fu
