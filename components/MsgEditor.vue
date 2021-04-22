@@ -25,4 +25,6 @@ export default {
   },
   data() {
     return {
- 
+      message: "",
+      rows: 1,
+      autoGrow
