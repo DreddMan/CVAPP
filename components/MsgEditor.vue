@@ -19,4 +19,6 @@ import { isMobile } from 'is-mobile'
 export default {
   name: "MsgEditor",
   props: {
-    sendMessage: Fu
+    sendMessage: Function,
+    disabled: Boolean,
+    lo
