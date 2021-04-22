@@ -27,4 +27,9 @@ export default {
     return {
       message: "",
       rows: 1,
-      autoGrow
+      autoGrow: true,
+    };
+  },
+  computed: {
+    hint() {
+      re
