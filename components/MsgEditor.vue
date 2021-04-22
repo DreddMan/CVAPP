@@ -21,4 +21,8 @@ export default {
   props: {
     sendMessage: Function,
     disabled: Boolean,
-    lo
+    loading: Boolean,
+  },
+  data() {
+    return {
+ 
