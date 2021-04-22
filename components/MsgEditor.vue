@@ -15,4 +15,5 @@
 </template>
 
 <script>
-impor
+import { isMobile } from 'is-mobile'
+export default {
