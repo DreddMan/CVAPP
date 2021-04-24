@@ -37,3 +37,4 @@ export default {
   },
   watch: {
     message(val) {
+      const lines = val.split(/\r\n|\r|\n/).l
