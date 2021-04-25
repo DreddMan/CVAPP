@@ -37,4 +37,6 @@ export default {
   },
   watch: {
     message(val) {
-      const lines = val.split(/\r\n|\r|\n/).l
+      const lines = val.split(/\r\n|\r|\n/).length;
+      if (lines > 8) {
+     
