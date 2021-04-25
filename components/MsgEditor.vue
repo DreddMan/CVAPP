@@ -42,4 +42,6 @@ export default {
         this.rows = lines;
         this.autoGrow = false;
       } else {
-        this.r
+        this.rows = 1;
+        this.autoGrow = true;
+  
