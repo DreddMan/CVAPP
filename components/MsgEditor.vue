@@ -40,4 +40,6 @@ export default {
       const lines = val.split(/\r\n|\r|\n/).length;
       if (lines > 8) {
         this.rows = lines;
-        this.autoGrow 
+        this.autoGrow = false;
+      } else {
+        this.r
