@@ -39,4 +39,5 @@ export default {
     message(val) {
       const lines = val.split(/\r\n|\r|\n/).length;
       if (lines > 8) {
-     
+        this.rows = lines;
+        this.autoGrow 
