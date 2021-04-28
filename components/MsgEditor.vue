@@ -49,3 +49,5 @@ export default {
   },
   methods: {
     send() {
+      let msg = this.message
+      // re
