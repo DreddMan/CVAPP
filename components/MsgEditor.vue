@@ -44,4 +44,8 @@ export default {
       } else {
         this.rows = 1;
         this.autoGrow = true;
-  
+      }
+    },
+  },
+  methods: {
+    send() {
