@@ -50,4 +50,5 @@ export default {
   methods: {
     send() {
       let msg = this.message
-      // re
+      // remove the last "\n"
+      if (msg[msg
