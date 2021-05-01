@@ -66,4 +66,6 @@ export default {
       this.send()
     },
     enterOnly () {
-      if (!isMo
+      if (!isMobile()) {
+        this.send()
+    
