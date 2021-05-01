@@ -58,3 +58,6 @@ export default {
         this.sendMessage(msg)
       }
       this.message = ""
+    },
+    usePrompt(prompt) {
+      this.m
