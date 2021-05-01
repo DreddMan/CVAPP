@@ -60,4 +60,7 @@ export default {
       this.message = ""
     },
     usePrompt(prompt) {
-      this.m
+      this.message = prompt
+    },
+    clickSendBtn () {
+      t
