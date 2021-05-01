@@ -52,4 +52,6 @@ export default {
       let msg = this.message
       // remove the last "\n"
       if (msg[msg.length - 1] === "\n") {
-        msg = 
+        msg = msg.slice(0, -1)
+      }
+      if (
