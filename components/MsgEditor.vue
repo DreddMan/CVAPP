@@ -63,4 +63,7 @@ export default {
       this.message = prompt
     },
     clickSendBtn () {
-      t
+      this.send()
+    },
+    enterOnly () {
+      if (!isMo
