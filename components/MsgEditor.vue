@@ -55,4 +55,6 @@ export default {
         msg = msg.slice(0, -1)
       }
       if (msg.length > 0) {
-        t
+        this.sendMessage(msg)
+      }
+      this.message = ""
