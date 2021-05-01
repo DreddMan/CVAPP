@@ -54,4 +54,5 @@ export default {
       if (msg[msg.length - 1] === "\n") {
         msg = msg.slice(0, -1)
       }
-      if (
+      if (msg.length > 0) {
+        t
