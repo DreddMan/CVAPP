@@ -68,4 +68,11 @@ export default {
     enterOnly () {
       if (!isMobile()) {
         this.send()
-    
+      }
+    }
+  },
+}
+</script>
+
+<style scoped>
+</styl
