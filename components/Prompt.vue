@@ -50,3 +50,52 @@ const updatePrompt = async (index) => {
   if (!error.value) {
     prompts.value[index] = editingPrompt.value
   }
+  editingPrompt.value.updating = false
+  editingPrompt.value = null
+}
+
+const cancelEditPrompt = () => {
+  editingPrompt.value = null
+}
+
+const deletePrompt = async (index) => {
+  deletingPromptIndex.value = index
+  const { data, error } = await useAuthFetch(`/api/chat/prompts/${prompts.value[index].id}/`, {
+    method: 'DELETE'
+  })
+  deletingPromptIndex.value = null
+  if (!error.value) {
+    prompts.value.splice(index, 1)
+  }
+}
+
+const loadPrompts = async () => {
+  loadingPrompts.value = true
+  const { data, error } = await useAuthFetch('/api/chat/prompts/')
+  if (!error.value) {
+    prompts.value = data.value
+  }
+  loadingPrompts.value = false
+}
+
+const selectPrompt = (prompt) => {
+  props.usePrompt(prompt.prompt)
+  menu.value = false
+}
+
+onMounted( () => {
+  loadPrompts()
+})
+</script>
+
+<template>
+  <div>
+    <v-menu
+        v-model="menu"
+        :close-on-content-click="false"
+    >
+      <template v-slot:activator="{ props }">
+        <v-btn
+            v-bind="props"
+            icon="speaker_notes"
+            title="Common prompts"
