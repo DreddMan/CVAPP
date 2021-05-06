@@ -194,3 +194,32 @@ onMounted( () => {
                     v-model="newPrompt"
                     label="Add a new prompt"
                     variant="outlined"
+                    density="compact"
+                    :error-messages="promptInputErrorMessage"
+                    @update:modelValue="promptInputErrorMessage = ''"
+                    clearable
+                >
+                </v-textarea>
+              </div>
+            </v-list-item>
+            <v-list-item>
+              <v-btn
+                  variant="text"
+                  block
+                  :loading="submittingNewPrompt"
+                  @click="addPrompt()"
+              >
+                <v-icon icon="add"></v-icon>
+                Add prompt
+              </v-btn>
+            </v-list-item>
+          </v-list>
+        </v-card>
+      </v-container>
+    </v-menu>
+  </div>
+</template>
+
+<style scoped>
+
+</style>
