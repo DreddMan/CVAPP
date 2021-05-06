@@ -75,4 +75,4 @@ export default {
 </script>
 
 <style scoped>
-</styl
+</style>
