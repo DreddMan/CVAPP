@@ -155,3 +155,42 @@ onMounted( () => {
                     </div>
                   </template>
                 </v-textarea>
+              </v-list-item>
+              <v-list-item
+                  v-if="!editingPrompt || editingPrompt.id !== prompt.id"
+                  rounded="xl"
+                  active-color="primary"
+                  @click="selectPrompt(prompt)"
+              >
+                <v-list-item-title>{{ prompt.prompt }}</v-list-item-title>
+                <template v-slot:append>
+                  <v-btn
+                      icon="edit"
+                      size="small"
+                      variant="text"
+                      @click="editPrompt(idx)"
+                  >
+                  </v-btn>
+                  <v-btn
+                      icon="delete"
+                      size="small"
+                      variant="text"
+                      :loading="deletingPromptIndex === idx"
+                      @click="deletePrompt(idx)"
+                  >
+                  </v-btn>
+                </template>
+              </v-list-item>
+            </template>
+
+            <v-list-item
+                active-color="primary"
+            >
+              <div
+                  class="pt-3"
+              >
+                <v-textarea
+                    rows="2"
+                    v-model="newPrompt"
+                    label="Add a new prompt"
+                    variant="outlined"
