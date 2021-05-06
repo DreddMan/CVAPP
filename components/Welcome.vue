@@ -13,3 +13,49 @@
         </div>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col cols="12" md="10" offset-md="1">
+        <v-row>
+          <v-col
+              cols="12"
+              md="4"
+          >
+            <v-row>
+              <v-col>
+                <div class="d-flex flex-column align-center">
+                  <v-icon icon="sunny"></v-icon>
+                  <h3 class="text-h6">{{ $t('welcomeScreen.examples.title') }}</h3>
+                </div>
+              </v-col>
+            </v-row>
+            <WelcomeCard v-for="example in examples" :content="example" />
+          </v-col>
+          <v-col
+              cols="12"
+              md="4"
+          >
+            <v-row>
+              <v-col>
+                <div class="d-flex flex-column align-center">
+                  <v-icon icon="bolt"></v-icon>
+                  <h3 class="text-h6">{{ $t('welcomeScreen.capabilities.title') }}</h3>
+                </div>
+              </v-col>
+            </v-row>
+            <WelcomeCard v-for="capabilitie in capabilities" :content="capabilitie" />
+          </v-col>
+          <v-col
+              cols="12"
+              md="4"
+          >
+            <v-row>
+              <v-col>
+                <div class="d-flex flex-column align-center">
+                  <v-icon icon="warning_amber"></v-icon>
+                  <h3 class="text-h6">{{ $t('welcomeScreen.limitations.title') }}</h3>
+                </div>
+              </v-col>
+            </v-row>
+            <WelcomeCard v-for="limitation in limitations" :content="limitation" />
+          </v-col>
+        </v-row>
