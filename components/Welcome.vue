@@ -59,3 +59,27 @@
             <WelcomeCard v-for="limitation in limitations" :content="limitation" />
           </v-col>
         </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const runtimeConfig = useRuntimeConfig()
+const { $i18n } = useNuxtApp()
+const examples = ref([
+  $i18n.t('welcomeScreen.examples.item1'),
+  $i18n.t('welcomeScreen.examples.item2'),
+  $i18n.t('welcomeScreen.examples.item3')
+])
+const capabilities = ref([
+  $i18n.t('welcomeScreen.capabilities.item1'),
+  $i18n.t('welcomeScreen.capabilities.item2'),
+  $i18n.t('welcomeScreen.capabilities.item3')
+])
+const limitations = ref([
+  $i18n.t('welcomeScreen.limitations.item1'),
+  $i18n.t('welcomeScreen.limitations.item2'),
+  $i18n.t('welcomeScreen.limitations.item3')
+])
+</script>
