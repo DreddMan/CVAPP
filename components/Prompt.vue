@@ -99,3 +99,59 @@ onMounted( () => {
             v-bind="props"
             icon="speaker_notes"
             title="Common prompts"
+            class="mr-3"
+        ></v-btn>
+      </template>
+
+      <v-container>
+        <v-card
+            min-width="300"
+            max-width="500"
+        >
+          <v-card-title>
+            <span class="headline">Frequently prompts</span>
+          </v-card-title>
+
+          <v-divider></v-divider>
+
+          <v-list>
+            <v-list-item v-show="loadingPrompts">
+              <v-list-item-title class="d-flex justify-center">
+                <v-progress-circular indeterminate></v-progress-circular>
+              </v-list-item-title>
+            </v-list-item>
+            <template
+                v-for="(prompt, idx) in prompts"
+                :key="prompt.id"
+            >
+              <v-list-item
+                  active-color="primary"
+                  rounded="xl"
+                  v-if="editingPrompt && editingPrompt.id === prompt.id"
+              >
+                <v-textarea
+                    rows="2"
+                    v-model="editingPrompt.prompt"
+                    :loading="editingPrompt.updating"
+                    variant="underlined"
+                    hide-details
+                    density="compact"
+                >
+                  <template v-slot:append>
+                    <div class="d-flex flex-column">
+                      <v-btn
+                          icon="done"
+                          variant="text"
+                          :loading="editingPrompt.updating"
+                          @click="updatePrompt(idx)"
+                      >
+                      </v-btn>
+                      <v-btn
+                          icon="close"
+                          variant="text"
+                          @click="cancelEditPrompt()"
+                      >
+                      </v-btn>
+                    </div>
+                  </template>
+                </v-textarea>
