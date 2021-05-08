@@ -22,3 +22,4 @@
 
 <script setup>
 const props = defineProps(['content'])
+</script>
