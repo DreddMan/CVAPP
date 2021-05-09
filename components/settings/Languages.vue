@@ -3,4 +3,6 @@
       v-model="dialog"
       fullscreen
       :scrim="false"
-      transition="dialog-bottom-transitio
+      transition="dialog-bottom-transition"
+  >
+    <template v-slot:activator="{ props 
