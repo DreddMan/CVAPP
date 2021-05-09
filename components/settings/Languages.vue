@@ -1,3 +1,5 @@
 <template>
   <v-dialog
-      v-model
+      v-model="dialog"
+      fullscreen
+      :scrim="
