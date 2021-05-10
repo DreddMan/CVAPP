@@ -7,4 +7,6 @@
   >
     <template v-slot:activator="{ props }">
       <v-list-item
-          v-bind="
+          v-bind="props"
+          rounded="xl"
+          prep
