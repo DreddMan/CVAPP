@@ -9,4 +9,5 @@
       <v-list-item
           v-bind="props"
           rounded="xl"
-          prep
+          prepend-icon="language"
+          :title="$t
