@@ -10,4 +10,6 @@
           v-bind="props"
           rounded="xl"
           prepend-icon="language"
-          :title="$t
+          :title="$t('language')"
+      ></v-list-item>
+    </template>
