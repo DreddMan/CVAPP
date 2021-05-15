@@ -13,3 +13,6 @@
           :title="$t('language')"
       ></v-list-item>
     </template>
+    <v-card>
+      <v-toolbar
+          dark
