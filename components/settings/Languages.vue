@@ -16,3 +16,6 @@
     <v-card>
       <v-toolbar
           dark
+          color="primary"
+      >
+        <v-
