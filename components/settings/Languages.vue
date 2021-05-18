@@ -23,4 +23,6 @@
             dark
             @click="dialog = false"
         >
-          <v
+          <v-icon>close</v-icon>
+        </v-btn>
+        <v-toolbar-
