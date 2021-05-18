@@ -21,4 +21,6 @@
         <v-btn
             icon
             dark
-         
+            @click="dialog = false"
+        >
+          <v
