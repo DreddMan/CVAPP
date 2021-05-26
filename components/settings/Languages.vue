@@ -40,4 +40,4 @@
       >
         <!--          <v-list-item-->
         <!--              title="Use device language"-->
-        <!--   
+        <!--              :append-icon="usingDeviceLanguage() ? '
