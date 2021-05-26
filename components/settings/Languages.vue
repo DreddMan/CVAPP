@@ -39,4 +39,5 @@
       <v-list
       >
         <!--          <v-list-item-->
-        <!--              title="Use devi
+        <!--              title="Use device language"-->
+        <!--   
