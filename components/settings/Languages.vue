@@ -40,4 +40,4 @@
       >
         <!--          <v-list-item-->
         <!--              title="Use device language"-->
-        <!--              :append-icon="usingDeviceLanguage() ? '
+        <!--              :append-icon="usingDeviceLanguage() ? 'radio_button_checked' : 'radio_button_unche
