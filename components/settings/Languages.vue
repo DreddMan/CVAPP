@@ -45,4 +45,6 @@
         <!--          >-->
         <!--          </v-list-item>-->
         <v-list-item
-            v-for="l in locales
+            v-for="l in locales"
+            :key="l.code"
+            :title="l.na
