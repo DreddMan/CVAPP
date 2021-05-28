@@ -44,4 +44,5 @@
         <!--              @click="useDeviceLanguage"-->
         <!--          >-->
         <!--          </v-list-item>-->
-        <
+        <v-list-item
+            v-for="l in locales
