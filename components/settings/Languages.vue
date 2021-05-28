@@ -47,4 +47,5 @@
         <v-list-item
             v-for="l in locales"
             :key="l.code"
-            :title="l.na
+            :title="l.name"
+            :append-icon="radioIco
