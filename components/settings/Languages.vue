@@ -48,4 +48,5 @@
             v-for="l in locales"
             :key="l.code"
             :title="l.name"
-            :append-icon="radioIco
+            :append-icon="radioIcon(l.code)"
+            @click=
