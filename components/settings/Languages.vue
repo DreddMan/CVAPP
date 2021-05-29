@@ -49,4 +49,6 @@
             :key="l.code"
             :title="l.name"
             :append-icon="radioIcon(l.code)"
-            @click=
+            @click="updateLocale(l.code)"
+        >
+        
