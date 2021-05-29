@@ -53,4 +53,8 @@
         >
         </v-list-item>
       </v-list>
-    </v-card
+    </v-card>
+  </v-dialog>
+</template>
+
+<script setup
