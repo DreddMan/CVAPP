@@ -51,4 +51,6 @@
             :append-icon="radioIcon(l.code)"
             @click="updateLocale(l.code)"
         >
-        
+        </v-list-item>
+      </v-list>
+    </v-card
