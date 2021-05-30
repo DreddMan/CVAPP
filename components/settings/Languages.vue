@@ -59,4 +59,7 @@
 
 <script setup>
 const dialog = ref(false)
-const { locale, locales, setL
+const { locale, locales, setLocale } = useI18n()
+const { $i18n } = useNuxtApp()
+
+// 
