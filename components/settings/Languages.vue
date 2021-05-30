@@ -57,4 +57,6 @@
   </v-dialog>
 </template>
 
-<script setup
+<script setup>
+const dialog = ref(false)
+const { locale, locales, setL
