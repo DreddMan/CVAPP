@@ -63,4 +63,4 @@ const { locale, locales, setLocale } = useI18n()
 const { $i18n } = useNuxtApp()
 
 // const usingDeviceLanguage = () => {
-//  
+//   return ($i18n.getLocaleCookie() === undefined || $
