@@ -70,4 +70,5 @@ const updateLocale = (lang) => {
   setLocale(lang)
 }
 
-c
+const radioIcon = (code) => {
+  return code ==
