@@ -66,3 +66,8 @@ const { $i18n } = useNuxtApp()
 //   return ($i18n.getLocaleCookie() === undefined || $i18n.getLocaleCookie() === 'undefined')
 // }
 
+const updateLocale = (lang) => {
+  setLocale(lang)
+}
+
+c
