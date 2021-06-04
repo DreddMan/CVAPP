@@ -71,4 +71,4 @@ const updateLocale = (lang) => {
 }
 
 const radioIcon = (code) => {
-  return code ==
+  return code === locale.value ? 'radio_button_checked' : 'radio_butto
