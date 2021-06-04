@@ -74,4 +74,5 @@ const radioIcon = (code) => {
   return code === locale.value ? 'radio_button_checked' : 'radio_button_unchecked'
 }
 
-// const useDeviceLan
+// const useDeviceLanguage = () => {
+//   setLocale($i18n.
