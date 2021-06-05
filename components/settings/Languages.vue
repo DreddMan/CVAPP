@@ -75,4 +75,5 @@ const radioIcon = (code) => {
 }
 
 // const useDeviceLanguage = () => {
-//   setLocale($i18n.
+//   setLocale($i18n.getBrowserLocale())
+//   $i18n.setLocaleCookie(unde
