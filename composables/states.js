@@ -1,4 +1,6 @@
 
 export const useModels = () => useState('models', () => getStoredModels())
 
-export const useCurrentModel = () => useState('curren
+export const useCurrentModel = () => useState('currentModel', () => getCurrentModel())
+
+export con
