@@ -3,4 +3,6 @@ export const useModels = () => useState('models', () => getStoredModels())
 
 export const useCurrentModel = () => useState('currentModel', () => getCurrentModel())
 
-export const useApiKey = () => useState('apiKey', 
+export const useApiKey = () => useState('apiKey', () => getStoredApiKey())
+
+export const us
