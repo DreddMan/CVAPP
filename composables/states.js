@@ -5,4 +5,6 @@ export const useCurrentModel = () => useState('currentModel', () => getCurrentMo
 
 export const useApiKey = () => useState('apiKey', () => getStoredApiKey())
 
-export const useConversion = () => useState('conversion', () =>
+export const useConversion = () => useState('conversion', () => getDefaultConversionData())
+
+export const 
