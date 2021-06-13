@@ -5,4 +5,4 @@ export const useCurrentModel = () => useState('currentModel', () => getCurrentMo
 
 export const useApiKey = () => useState('apiKey', () => getStoredApiKey())
 
-export const us
+export const useConversion = () => useState('conversion', () =>
