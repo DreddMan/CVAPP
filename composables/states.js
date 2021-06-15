@@ -7,4 +7,4 @@ export const useApiKey = () => useState('apiKey', () => getStoredApiKey())
 
 export const useConversion = () => useState('conversion', () => getDefaultConversionData())
 
-export const useConversions = () => useState('conversio
+export const useConversions = () => useState('conversions', () => [])
