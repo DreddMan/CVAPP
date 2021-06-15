@@ -1,1 +1,2 @@
-export const useA
+export const useAuthFetch = async (url, options = {}) => {
+    
