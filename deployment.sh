@@ -1,3 +1,3 @@
 #!/bin/bash
 
-read 
+read -p "Please enter a domain name or external I
