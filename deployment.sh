@@ -12,4 +12,4 @@ if [ -z "$CLIENT_PORT" ]; then
   CLIENT_PORT="80"
 fi
 
-read -p 
+read -p "Please set a port for the backen
