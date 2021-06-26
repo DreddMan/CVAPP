@@ -8,4 +8,8 @@ fi
 
 read -p "Please set a port for the frontend server [default: 80]: " CLIENT_PORT
 
-if [ -z "$CLIENT_POR
+if [ -z "$CLIENT_PORT" ]; then
+  CLIENT_PORT="80"
+fi
+
+read -p 
