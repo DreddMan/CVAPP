@@ -12,4 +12,6 @@ if [ -z "$CLIENT_PORT" ]; then
   CLIENT_PORT="80"
 fi
 
-read -p "Please set a port for the backen
+read -p "Please set a port for the backend server [default: 9000]: " SERVER_PORT
+
+if [ -z 
