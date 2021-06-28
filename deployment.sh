@@ -14,4 +14,7 @@ fi
 
 read -p "Please set a port for the backend server [default: 9000]: " SERVER_PORT
 
-if [ -z 
+if [ -z "$SERVER_PORT" ]; then
+  SERVER_PORT="9000"
+fi
+
