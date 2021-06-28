@@ -18,3 +18,4 @@ if [ -z "$SERVER_PORT" ]; then
   SERVER_PORT="9000"
 fi
 
+read -p "Please set a port for the backen
