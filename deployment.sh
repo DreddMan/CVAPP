@@ -18,4 +18,4 @@ if [ -z "$SERVER_PORT" ]; then
   SERVER_PORT="9000"
 fi
 
-read -p "Please set a port for the backen
+read -p "Please set a port for the backend WSGI server [default: 8000]: " WSGI_P
