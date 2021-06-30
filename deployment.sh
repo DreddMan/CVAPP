@@ -24,4 +24,5 @@ if [ -z "$WSGI_PORT" ]; then
   WSGI_PORT="8000"
 fi
 
-if [[ $(which docker
+if [[ $(which docker) ]]; then
+    echo "Docker is already installed"
