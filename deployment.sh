@@ -21,4 +21,7 @@ fi
 read -p "Please set a port for the backend WSGI server [default: 8000]: " WSGI_PORT
 
 if [ -z "$WSGI_PORT" ]; then
-  W
+  WSGI_PORT="8000"
+fi
+
+if [[ $(which docker
