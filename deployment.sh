@@ -26,3 +26,5 @@ fi
 
 if [[ $(which docker) ]]; then
     echo "Docker is already installed"
+else
+    echo "Docker is not installed, installing no
