@@ -31,4 +31,5 @@ else
 
     sudo apt-get update
 
-    sudo apt-
+    sudo apt-get install -y \
+        ca-cert
