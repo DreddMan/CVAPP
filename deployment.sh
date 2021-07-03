@@ -39,4 +39,4 @@ else
 
     sudo mkdir -m 0755 -p /etc/apt/keyrings
 
-    curl -fsSL https:
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | 
