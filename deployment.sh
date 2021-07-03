@@ -34,4 +34,7 @@ else
     sudo apt-get install -y \
         ca-certificates \
         curl \
-        g
+        gnupg \
+        lsb-release
+
+    sudo mkdir -
