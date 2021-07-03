@@ -32,4 +32,6 @@ else
     sudo apt-get update
 
     sudo apt-get install -y \
-        ca-cert
+        ca-certificates \
+        curl \
+        g
