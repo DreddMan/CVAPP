@@ -37,4 +37,6 @@ else
         gnupg \
         lsb-release
 
-    sudo mkdir -
+    sudo mkdir -m 0755 -p /etc/apt/keyrings
+
+    curl -fsSL https:
