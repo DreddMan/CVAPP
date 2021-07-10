@@ -43,4 +43,4 @@ else
 
     echo \
         "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-        $(lsb_
+        $(lsb_release -cs) stable" | sudo tee /etc/apt/s
