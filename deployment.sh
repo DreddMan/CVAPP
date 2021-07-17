@@ -52,3 +52,4 @@ fi
 if [[ $(which docker-compose) ]]; then
     echo "Docker Compose is already installed"
 else
+    echo "Docker Compose is not instal
