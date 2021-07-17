@@ -49,4 +49,5 @@ else
 
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 fi
-if [
+if [[ $(which docker-compose) ]]; then
+    echo "D
