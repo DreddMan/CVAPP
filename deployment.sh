@@ -52,4 +52,6 @@ fi
 if [[ $(which docker-compose) ]]; then
     echo "Docker Compose is already installed"
 else
-    echo "Docker Compose is not instal
+    echo "Docker Compose is not installed, installing now..."
+
+    sudo curl -L "http
