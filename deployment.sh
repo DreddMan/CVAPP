@@ -54,4 +54,4 @@ if [[ $(which docker-compose) ]]; then
 else
     echo "Docker Compose is not installed, installing now..."
 
-    sudo curl -L "http
+    sudo curl -L "https://github.com/docker/compose/releases/do
