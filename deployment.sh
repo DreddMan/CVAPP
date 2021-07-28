@@ -63,4 +63,6 @@ echo "Downloading configuration files..."
 
 sudo curl -L "https://raw.githubusercontent.com/WongSaang/chatgpt-ui/main/docker-compose.yml" -o docker-compose.yml
 
-echo "Startin
+echo "Starting services..."
+
+sudo APP_DOMAIN="${APP_DO
