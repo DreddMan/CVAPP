@@ -60,3 +60,5 @@ else
 fi
 
 echo "Downloading configuration files..."
+
+sudo curl -L "https://raw.githubuserconte
