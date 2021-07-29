@@ -65,4 +65,4 @@ sudo curl -L "https://raw.githubusercontent.com/WongSaang/chatgpt-ui/main/docker
 
 echo "Starting services..."
 
-sudo APP_DOMAIN="${APP_DO
+sudo APP_DOMAIN="${APP_DOMAIN}:${SERVER_PORT}" CLIENT_PORT=${CLIENT_PORT} 
