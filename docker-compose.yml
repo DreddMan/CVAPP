@@ -1,4 +1,5 @@
 version: '3'
 services:
   client:
-    i
+    image: wongsaang/chatgpt-ui-client:latest
+ 
