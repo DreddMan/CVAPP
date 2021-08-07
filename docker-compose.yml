@@ -3,4 +3,4 @@ services:
   client:
     image: wongsaang/chatgpt-ui-client:latest
     environment:
-      - SERV
+      - SERVER_DOMAIN=http://backend-web-ser
