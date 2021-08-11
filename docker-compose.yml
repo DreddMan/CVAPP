@@ -3,4 +3,6 @@ services:
   client:
     image: wongsaang/chatgpt-ui-client:latest
     environment:
-      - SERVER_DOMAIN=http://backend-web-ser
+      - SERVER_DOMAIN=http://backend-web-server
+      - NUXT_PUBLIC_APP_NAME='ChatGPT UI'
+     
