@@ -6,4 +6,6 @@ services:
       - SERVER_DOMAIN=http://backend-web-server
       - NUXT_PUBLIC_APP_NAME='ChatGPT UI'
       - NUXT_PUBLIC_TYPEWRITER=true
-      - NUXT_PUBLIC
+      - NUXT_PUBLIC_TYPEWRITER_DELAY=100
+    depends_on:
+  
