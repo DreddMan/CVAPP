@@ -8,4 +8,5 @@ services:
       - NUXT_PUBLIC_TYPEWRITER=true
       - NUXT_PUBLIC_TYPEWRITER_DELAY=100
     depends_on:
-  
+      - backend-web-server
+    p
