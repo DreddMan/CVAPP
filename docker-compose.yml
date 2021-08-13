@@ -11,4 +11,6 @@ services:
       - backend-web-server
     ports:
       - '${CLIENT_PORT:-80}:80'
-    netw
+    networks:
+      - chatgpt_ui_network
+    restart: al
