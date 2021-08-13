@@ -13,4 +13,6 @@ services:
       - '${CLIENT_PORT:-80}:80'
     networks:
       - chatgpt_ui_network
-    restart: al
+    restart: always
+  backend-wsgi-server:
+    image: wo
