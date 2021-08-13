@@ -15,4 +15,4 @@ services:
       - chatgpt_ui_network
     restart: always
   backend-wsgi-server:
-    image: wo
+    image: wongsaang/chatgpt-ui-wsgi-server:latest
