@@ -16,3 +16,5 @@ services:
     restart: always
   backend-wsgi-server:
     image: wongsaang/chatgpt-ui-wsgi-server:latest
+    environment:
+      - APP_DOMAIN=${APP_DOMAI
