@@ -23,4 +23,5 @@ services:
       - DJANGO_SUPERUSER_PASSWORD=password # default superuser password
       - DJANGO_SUPERUSER_EMAIL=admin@example.com # default superuser email
       # If you want to use the email verification function, you need to configure the following parameters
-#   
+#      - EMAIL_HOST=SMTP server address
+#      
