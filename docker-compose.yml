@@ -29,4 +29,6 @@ services:
 #      - EMAIL_HOST_PASSWORD=
 #      - EMAIL_USE_TLS=True
     ports:
-      - '${W
+      - '${WSGI_PORT:-8000}:8000'
+    networks:
+    
