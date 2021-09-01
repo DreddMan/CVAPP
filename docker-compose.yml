@@ -34,4 +34,5 @@ services:
       - chatgpt_ui_network
     restart: always
   backend-web-server:
-    image: wongs
+    image: wongsaang/chatgpt-ui-web-server:latest
+    e
