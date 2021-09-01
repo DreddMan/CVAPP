@@ -31,4 +31,5 @@ services:
     ports:
       - '${WSGI_PORT:-8000}:8000'
     networks:
-    
+      - chatgpt_ui_network
+    restart: al
