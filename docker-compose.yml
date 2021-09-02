@@ -36,4 +36,6 @@ services:
   backend-web-server:
     image: wongsaang/chatgpt-ui-web-server:latest
     environment:
-      - BACKEND_URL=http://backen
+      - BACKEND_URL=http://backend-wsgi-server:8000
+    ports:
+      
