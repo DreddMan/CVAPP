@@ -38,4 +38,5 @@ services:
     environment:
       - BACKEND_URL=http://backend-wsgi-server:8000
     ports:
-      
+      - '${SERVER_PORT:-9000}:80'
+    depends_
