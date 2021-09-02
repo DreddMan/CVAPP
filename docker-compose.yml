@@ -35,4 +35,5 @@ services:
     restart: always
   backend-web-server:
     image: wongsaang/chatgpt-ui-web-server:latest
-    e
+    environment:
+      - BACKEND_URL=http://backen
