@@ -46,4 +46,5 @@ services:
     restart: always
 
 networks:
-  chatgpt_ui_network
+  chatgpt_ui_network:
+    driver: bridge
