@@ -43,4 +43,7 @@ services:
       - backend-wsgi-server
     networks:
       - chatgpt_ui_network
-    restart: a
+    restart: always
+
+networks:
+  chatgpt_ui_network
