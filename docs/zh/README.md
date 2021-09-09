@@ -112,3 +112,55 @@ services:
       - chatgpt_ui_network
   backend-web-server:
     image: wongsaang/chatgpt-ui-web-server:latest
+    environment:
+      - BACKEND_URL=http://backend-wsgi-server:8000
+    ports:
+      - '9000:80'
+    depends_on:
+      - backend-wsgi-server
+    networks:
+      - chatgpt_ui_network
+
+networks:
+  chatgpt_ui_network:
+    driver: bridge
+```
+
+### DB_URL 格式对照表
+
+| 数据库                | 链接                                              |
+|----------------------|--------------------------------------------------|
+| PostgreSQL           | ``postgres://USER:PASSWORD@HOST:PORT/NAME``      |
+| MySQL                | ``mysql://USER:PASSWORD@HOST:PORT/NAME``         |
+| SQLite               | ``sqlite:///PATH``                               |
+
+### 设置 API 密钥
+
+访问 `http(s)://your.domain:9000/admin` / IP `http(s)://123.123.123.123:9000/admin` 登录管理面板。
+
+默认超级用户: `admin`
+
+默认密码: `password`
+
+在可以开始聊天之前，您需要添加一个 OpenAI 的 API 密钥。在管理面板的设置模型中，添加一个名称为 openai_api_key 的记录，将值设置为您的 API 密钥。
+
+现在可以访问客户端地址 `http(s)://your.domain` / `http://123.123.123.123` 开始聊天。
+
+
+## Development
+
+### Setup
+
+Make sure to install the dependencies:
+
+```bash
+# yarn
+yarn install
+```
+
+### Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+yarn dev
