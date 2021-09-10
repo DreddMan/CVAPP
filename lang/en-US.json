@@ -2,4 +2,5 @@
   "welcomeTo": "Welcome to",
   "language": "Language",
   "setApiKey": "Set API Key",
-  "setOpenAIApiKey": "Set OpenA
+  "setOpenAIApiKey": "Set OpenAI API Key",
+  "openAIApiKey": "OpenAI API Key"
