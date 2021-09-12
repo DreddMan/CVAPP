@@ -3,4 +3,6 @@
   "language": "Language",
   "setApiKey": "Set API Key",
   "setOpenAIApiKey": "Set OpenAI API Key",
-  "openAIApiKey": "OpenAI API Key"
+  "openAIApiKey": "OpenAI API Key",
+  "getAKey": "Get a key",
+  "openAIMode
