@@ -20,4 +20,6 @@
   "clearConversations": "Clear conversations",
   "roles": {
     "me": "Me",
-  
+    "ai": "AI"
+  },
+  "welcomeScreen
