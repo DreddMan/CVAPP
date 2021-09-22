@@ -17,4 +17,7 @@
   "themeMode": "Theme Mode",
   "feedback": "Feedback",
   "newConversation": "New conversation",
-  "clearConversations": "Clear conve
+  "clearConversations": "Clear conversations",
+  "roles": {
+    "me": "Me",
+  
