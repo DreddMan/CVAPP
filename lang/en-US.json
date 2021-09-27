@@ -23,4 +23,4 @@
     "ai": "AI"
   },
   "welcomeScreen": {
-    "introduction1": "is an unofficial c
+    "introduction1": "is an unofficial client for ChatGPT, but uses the official OpenAI API."
