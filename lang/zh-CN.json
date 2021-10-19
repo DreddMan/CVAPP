@@ -2,4 +2,5 @@
   "welcomeTo": "欢迎来到",
   "language": "语言",
   "setApiKey": "设置API密钥",
-  "setOpenAIApiKey": "设置
+  "setOpenAIApiKey": "设置OpenAI的API密钥",
+  "openAIApiKey": "Open
