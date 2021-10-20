@@ -3,4 +3,6 @@
   "language": "语言",
   "setApiKey": "设置API密钥",
   "setOpenAIApiKey": "设置OpenAI的API密钥",
-  "openAIApiKey": "Open
+  "openAIApiKey": "OpenAI的API密钥",
+  "getAKey": "获取钥匙",
+  "op
