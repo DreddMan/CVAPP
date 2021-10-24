@@ -12,4 +12,7 @@
   "writeAMessage": "输入信息",
   "pressEnterToSendYourMessageOrShiftEnterToAddANewLine": "按回车键发送您的信息，或按Shift+Enter键添加新行",
   "lightMode": "明亮模式",
-  "darkMode": "暗色模式
+  "darkMode": "暗色模式",
+  "followSystem": "跟随系统",
+  "themeMode": "主题模式",
+  
