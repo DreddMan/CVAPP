@@ -21,4 +21,6 @@
   "roles": {
     "me": "我",
     "ai": "AI"
- 
+  },
+  "welcomeScreen": {
+    "introduction
