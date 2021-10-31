@@ -24,4 +24,6 @@
   },
   "welcomeScreen": {
     "introduction1": "是一个非官方的ChatGPT客户端，但使用OpenAI的官方API",
-    "introduction2": "在使用本客户端之前，您需要一个OpenAI 
+    "introduction2": "在使用本客户端之前，您需要一个OpenAI API密钥。",
+    "examples": {
+      "titl
