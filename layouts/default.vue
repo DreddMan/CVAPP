@@ -40,3 +40,45 @@ const updateConversation = async (index) => {
     body: JSON.stringify({
       topic: editingConversation.value.topic
     })
+  })
+  if (!error.value) {
+    conversations.value[index] = editingConversation.value
+  }
+  editingConversation.value = null
+}
+
+const deleteConversation = async (index) => {
+  deletingConversationIndex.value = index
+  const { data, error } = await useAuthFetch(`/api/chat/conversations/${conversations.value[index].id}/`, {
+    method: 'DELETE'
+  })
+  deletingConversationIndex.value = null
+  if (!error.value) {
+    if (conversations.value[index].id === currentConversation.value.id) {
+      createNewConversion()
+    }
+    conversations.value.splice(index, 1)
+  }
+}
+
+const clearConversations = async () => {
+  deletingConversations.value = true
+  const { data, error } = await useAuthFetch(`/api/chat/conversations/delete_all`, {
+    method: 'DELETE'
+  })
+  if (!error.value) {
+    loadConversations()
+    clearConfirmDialog.value = false
+  }
+  deletingConversations.value = false
+}
+
+const clearConfirmDialog = ref(false)
+const deletingConversations = ref(false)
+const loadingConversations = ref(false)
+
+const loadConversations = async () => {
+  loadingConversations.value = true
+  conversations.value = await getConversions()
+  loadingConversations.value = false
+}
