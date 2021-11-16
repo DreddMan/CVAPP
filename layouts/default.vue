@@ -82,3 +82,48 @@ const loadConversations = async () => {
   conversations.value = await getConversions()
   loadingConversations.value = false
 }
+
+const {mdAndUp} = useDisplay()
+
+const drawerPermanent = computed(() => {
+  return mdAndUp.value
+})
+
+onNuxtReady(async () => {
+  loadConversations()
+})
+
+</script>
+
+<template>
+  <v-app
+      :theme="$colorMode.value"
+  >
+    <v-navigation-drawer
+        v-model="drawer"
+        :permanent="drawerPermanent"
+        width="300"
+    >
+      <div class="px-2 py-2">
+        <v-list>
+          <v-list-item>
+            <v-btn
+                block
+                variant="outlined"
+                prepend-icon="add"
+                @click="createNewConversion()"
+                class="text-none"
+            >
+              {{ $t('newConversation') }}
+            </v-btn>
+          </v-list-item>
+          <v-list-item v-show="loadingConversations">
+            <v-list-item-title class="d-flex justify-center">
+              <v-progress-circular indeterminate></v-progress-circular>
+            </v-list-item-title>
+          </v-list-item>
+        </v-list>
+
+        <v-list>
+          <template
+              v-for="(conversation, cIdx) in conversations"
