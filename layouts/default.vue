@@ -127,3 +127,55 @@ onNuxtReady(async () => {
         <v-list>
           <template
               v-for="(conversation, cIdx) in conversations"
+              :key="conversation.id"
+          >
+            <v-list-item
+                active-color="primary"
+                rounded="xl"
+                v-if="editingConversation && editingConversation.id === conversation.id"
+            >
+              <v-text-field
+                  v-model="editingConversation.topic"
+                  :loading="editingConversation.updating"
+                  variant="underlined"
+                  append-icon="done"
+                  hide-details
+                  density="compact"
+                  autofocus
+                  @keyup.enter="updateConversation(cIdx)"
+                  @click:append="updateConversation(cIdx)"
+              ></v-text-field>
+            </v-list-item>
+            <v-hover
+                v-if="!editingConversation || editingConversation.id !== conversation.id"
+                v-slot="{ isHovering, props }"
+            >
+              <v-list-item
+                  rounded="xl"
+                  active-color="primary"
+                  @click="openConversationMessages(conversation)"
+                  v-bind="props"
+              >
+                <v-list-item-title>{{ conversation.topic }}</v-list-item-title>
+                <template v-slot:append>
+                  <div
+                      v-show="isHovering"
+                  >
+                    <v-btn
+                        icon="edit"
+                        size="small"
+                        variant="text"
+                        @click.stop="editConversation(cIdx)"
+                    >
+                    </v-btn>
+                    <v-btn
+                        icon="delete"
+                        size="small"
+                        variant="text"
+                        :loading="deletingConversationIndex === cIdx"
+                        @click.stop="deleteConversation(cIdx)"
+                    >
+                    </v-btn>
+                  </div>
+                </template>
+              </v-list-item>
