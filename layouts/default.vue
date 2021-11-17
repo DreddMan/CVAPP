@@ -228,3 +228,48 @@ onNuxtReady(async () => {
                 </v-card-actions>
               </v-card>
             </v-dialog>
+
+            <v-menu
+            >
+              <template v-slot:activator="{ props }">
+                <v-list-item
+                    v-bind="props"
+                    rounded="xl"
+                    :prepend-icon="$colorMode.value === 'light' ? 'light_mode' : 'dark_mode'"
+                    :title="$t('themeMode')"
+                ></v-list-item>
+              </template>
+              <v-list
+                  bg-color="white"
+              >
+                <v-list-item
+                    v-for="(theme, idx) in themes"
+                    :key="idx"
+                    @click="setTheme(theme.value)"
+                >
+                  <v-list-item-title>{{ theme.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+
+            <SettingsLanguages/>
+
+            <v-list-item
+                rounded="xl"
+                prepend-icon="help_outline"
+                :title="$t('feedback')"
+                @click="feedback"
+            ></v-list-item>
+          </v-list>
+        </div>
+      </template>
+    </v-navigation-drawer>
+
+    <v-app-bar
+        class="d-md-none"
+    >
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-toolbar-title>{{ runtimeConfig.public.appName }}</v-toolbar-title>
+
+      <v-spacer></v-spacer>
