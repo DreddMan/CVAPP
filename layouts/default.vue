@@ -308,3 +308,13 @@ onNuxtReady(async () => {
 
 <style>
 .v-navigation-drawer__content::-webkit-scrollbar {
+  width: 0;
+}
+.v-navigation-drawer__content:hover::-webkit-scrollbar {
+  width: 6px;
+}
+.v-navigation-drawer__content:hover::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 3px;
+}
+</style>
