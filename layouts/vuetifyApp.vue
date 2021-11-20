@@ -1,3 +1,7 @@
 <template>
   <v-app
-      :theme
+      :theme="$colorMode.value"
+  >
+    <slot />
+  </v-app>
+</template
