@@ -4,4 +4,4 @@
   >
     <slot />
   </v-app>
-</template
+</template>
