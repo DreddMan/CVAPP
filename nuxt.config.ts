@@ -4,4 +4,6 @@ const appName = 'ChatGPT UI'
 export default defineNuxtConfig({
     dev: false,
     ssr: false,
-    app:
+    app: {
+        head: {
+            title: ap
