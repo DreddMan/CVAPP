@@ -10,3 +10,5 @@ export default defineNuxtConfig({
         },
     },
     runtimeConfig: {
+        public: {
+            appName: appN
