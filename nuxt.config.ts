@@ -6,4 +6,7 @@ export default defineNuxtConfig({
     ssr: false,
     app: {
         head: {
-            title: ap
+            title: appName,
+        },
+    },
+    runtimeConfig: {
