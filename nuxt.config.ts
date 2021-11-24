@@ -11,4 +11,5 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            appName: appN
+            appName: appName,
+            typewriter: false,
