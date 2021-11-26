@@ -13,3 +13,6 @@ export default defineNuxtConfig({
         public: {
             appName: appName,
             typewriter: false,
+            typewriterDelay: 50,
+        }
+ 
