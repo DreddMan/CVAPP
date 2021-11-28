@@ -15,4 +15,6 @@ export default defineNuxtConfig({
             typewriter: false,
             typewriterDelay: 50,
         }
- 
+    },
+    build: {
+        transpile: ['vuetify'
