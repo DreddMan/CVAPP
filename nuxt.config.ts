@@ -20,4 +20,5 @@ export default defineNuxtConfig({
         transpile: ['vuetify']
     },
     css: [
-        'vuetify/style
+        'vuetify/styles',
+        'material-design-icons-iconfo
