@@ -21,4 +21,4 @@ export default defineNuxtConfig({
     },
     css: [
         'vuetify/styles',
-        'material-design-icons-iconfo
+        'material-design-icons-iconfont/dist/material-design-icons.css',
