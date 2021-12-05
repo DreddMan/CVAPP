@@ -22,4 +22,7 @@ export default defineNuxtConfig({
     css: [
         'vuetify/styles',
         'material-design-icons-iconfont/dist/material-design-icons.css',
-        'highlight.js/styles/pa
+        'highlight.js/styles/panda-syntax-dark.css',
+    ],
+    modules: [
+      
