@@ -25,4 +25,5 @@ export default defineNuxtConfig({
         'highlight.js/styles/panda-syntax-dark.css',
     ],
     modules: [
-      
+        '@nuxtjs/color-mode',
+        '@nuxtjs/i18n
