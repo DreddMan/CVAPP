@@ -29,4 +29,7 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n'
     ],
     i18n: {
-        strategy
+        strategy: 'no_prefix',
+        locales: [
+            {
+    
