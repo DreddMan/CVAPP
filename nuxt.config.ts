@@ -34,4 +34,5 @@ export default defineNuxtConfig({
             {
                 code: 'en',
                 iso: 'en-US',
-                name: 'Eng
+                name: 'English',
+                file: 'en-US.jso
