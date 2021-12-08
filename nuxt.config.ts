@@ -33,4 +33,5 @@ export default defineNuxtConfig({
         locales: [
             {
                 code: 'en',
-              
+                iso: 'en-US',
+                name: 'Eng
