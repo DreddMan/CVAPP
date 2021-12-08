@@ -32,4 +32,5 @@ export default defineNuxtConfig({
         strategy: 'no_prefix',
         locales: [
             {
-    
+                code: 'en',
+              
