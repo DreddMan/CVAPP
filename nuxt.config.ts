@@ -38,4 +38,5 @@ export default defineNuxtConfig({
                 file: 'en-US.json',
             },
             {
-          
+                code: 'zh-CN',
+                iso: 'zh-C
