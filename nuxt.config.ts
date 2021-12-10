@@ -39,4 +39,6 @@ export default defineNuxtConfig({
             },
             {
                 code: 'zh-CN',
-                iso: 'zh-C
+                iso: 'zh-CN',
+                name: '简体中文',
+     
