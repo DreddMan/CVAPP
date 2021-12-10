@@ -42,4 +42,7 @@ export default defineNuxtConfig({
                 iso: 'zh-CN',
                 name: '简体中文',
                 file: 'zh-CN.json',
-           
+            }
+        ],
+        lazy: true,
+     
