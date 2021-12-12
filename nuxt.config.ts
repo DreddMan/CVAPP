@@ -52,4 +52,5 @@ export default defineNuxtConfig({
         },
     },
     nitro: {
- 
+        devProxy: {
+            "/a
