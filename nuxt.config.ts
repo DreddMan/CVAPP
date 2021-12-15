@@ -59,4 +59,6 @@ export default defineNuxtConfig({
                 changeOrigin: true,
             }
 
- 
+        }
+    },
+})
