@@ -54,4 +54,5 @@ export default defineNuxtConfig({
     nitro: {
         devProxy: {
             "/api": {
-                target: "http://loca
+                target: "http://localhost:8000/api",
+                prependPath:
