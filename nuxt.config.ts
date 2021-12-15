@@ -53,4 +53,5 @@ export default defineNuxtConfig({
     },
     nitro: {
         devProxy: {
-            "/a
+            "/api": {
+                target: "http://loca
