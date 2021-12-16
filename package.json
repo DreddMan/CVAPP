@@ -1,3 +1,5 @@
 {
   "private": true,
-  "scrip
+  "scripts": {
+    "build": "nuxt build",
+    "de
