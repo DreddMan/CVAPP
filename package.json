@@ -3,4 +3,6 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt gener
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "po
