@@ -7,4 +7,5 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependenc
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^
