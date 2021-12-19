@@ -8,4 +8,5 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/i18n": "^8.0.0-
