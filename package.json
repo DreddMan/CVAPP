@@ -14,4 +14,5 @@
     "nuxt": "^3.2.0"
   },
   "dependencies": {
-    "@mic
+    "@microsoft/fetch-event-source": "^2.0.1",
+   
