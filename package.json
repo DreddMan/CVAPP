@@ -15,4 +15,5 @@
   },
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
-   
+    "copy-to-clipboard": "^3.3.3",
+    "high
