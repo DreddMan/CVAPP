@@ -20,4 +20,7 @@
     "is-mobile": "^3.1.1",
     "markdown-it": "^13.0.1",
     "nanoid": "^4.0.1",
-    "vuetif
+    "vuetify": "^3.0.6"
+  },
+  "license": "MIT"
+}
