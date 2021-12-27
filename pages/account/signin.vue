@@ -46,3 +46,43 @@
               >
                 <v-btn
                     @click="navigateTo('/account/signup')"
+                    variant="text"
+                    color="primary"
+                >Create account</v-btn>
+
+                <v-btn
+                    color="primary"
+                    :loading="submitting"
+                    @click="submit"
+                    size="large"
+                >Submit</v-btn>
+              </div>
+
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
+
+</template>
+
+<script setup>
+definePageMeta({
+  layout: 'vuetify-app'
+})
+const formData = ref({
+  username: '',
+  password: ''
+})
+const formRules = ref({
+  username: [
+      v => !!v || 'Username is required'
+  ],
+  password: [
+      v => !!v || 'Password is required'
+  ]
+})
+const { $auth } = useNuxtApp()
+const errorMsg = ref(null)
+const signInForm = ref(null)
