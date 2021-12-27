@@ -86,3 +86,34 @@ const formRules = ref({
 const { $auth } = useNuxtApp()
 const errorMsg = ref(null)
 const signInForm = ref(null)
+const valid = ref(true)
+const submitting = ref(false)
+const route = useRoute()
+const passwordInputType = ref('password')
+
+const submit = async () => {
+  errorMsg.value = null
+  const { valid } = await signInForm.value.validate()
+  if (valid) {
+    submitting.value = true
+    const { data, error } = await useFetch('/api/account/login/', {
+      method: 'POST',
+      body: JSON.stringify(formData.value)
+    })
+    if (error.value) {
+      if (error.value.status === 400) {
+        if (error.value.data.non_field_errors) {
+          errorMsg.value = error.value.data.non_field_errors[0]
+        }
+      } else {
+        errorMsg.value = 'Something went wrong. Please try again.'
+      }
+    } else {
+      $auth.setUser(data.value.user)
+      navigateTo(route.query.callback || '/')
+    }
+    submitting.value = false
+  }
+}
+
+</script>
