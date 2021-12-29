@@ -1,3 +1,8 @@
 <script setup>
 definePageMeta({
-  layout: 'vuetify-ap
+  layout: 'vuetify-app'
+})
+
+const { $auth } = useNuxtApp()
+
+const formDat
