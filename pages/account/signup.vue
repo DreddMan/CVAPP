@@ -5,4 +5,7 @@ definePageMeta({
 
 const { $auth } = useNuxtApp()
 
-const formDat
+const formData = ref({
+  username: '',
+  email: '',
+  password1:
