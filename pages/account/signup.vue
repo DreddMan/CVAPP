@@ -8,4 +8,8 @@ const { $auth } = useNuxtApp()
 const formData = ref({
   username: '',
   email: '',
-  password1:
+  password1: '',
+  password2: '',
+})
+
+const fieldEr
