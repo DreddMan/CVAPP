@@ -12,4 +12,7 @@ const formData = ref({
   password2: '',
 })
 
-const fieldEr
+const fieldErrors = ref({
+  username: '',
+  email: '',
+  pas
