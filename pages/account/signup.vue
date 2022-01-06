@@ -15,4 +15,8 @@ const formData = ref({
 const fieldErrors = ref({
   username: '',
   email: '',
-  pas
+  password1: '',
+  password2: '',
+})
+
+const form
