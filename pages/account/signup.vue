@@ -21,4 +21,5 @@ const fieldErrors = ref({
 
 const formRules = ref({
   username: [
-    v => !!v || 'Please enter y
+    v => !!v || 'Please enter your username',
+    v => v.len
