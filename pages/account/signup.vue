@@ -19,4 +19,6 @@ const fieldErrors = ref({
   password2: '',
 })
 
-const form
+const formRules = ref({
+  username: [
+    v => !!v || 'Please enter y
