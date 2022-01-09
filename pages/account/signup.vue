@@ -22,4 +22,4 @@ const fieldErrors = ref({
 const formRules = ref({
   username: [
     v => !!v || 'Please enter your username',
-    v => v.len
+    v => v.length >= 4 || 'Username must be at least 4 chara
