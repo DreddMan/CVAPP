@@ -25,4 +25,5 @@ const formRules = ref({
     v => v.length >= 4 || 'Username must be at least 4 characters'
   ],
   email: [
-    v => !!v || 'Please ente
+    v => !!v || 'Please enter your e-mail address',
+    v => /.+@
