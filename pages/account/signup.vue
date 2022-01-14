@@ -26,4 +26,7 @@ const formRules = ref({
   ],
   email: [
     v => !!v || 'Please enter your e-mail address',
-    v => /.+@.+\..+/.test(v) || 'E-mail address mus
+    v => /.+@.+\..+/.test(v) || 'E-mail address must be valid'
+  ],
+  password1: [
+ 
