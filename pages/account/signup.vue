@@ -30,4 +30,6 @@ const formRules = ref({
   ],
   password1: [
     v => !!v || 'Please enter your password',
-    v => v.length >= 8 || '
+    v => v.length >= 8 || 'Password must be at least 8 characters'
+  ],
+  
