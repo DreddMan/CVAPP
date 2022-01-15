@@ -29,4 +29,4 @@ const formRules = ref({
     v => /.+@.+\..+/.test(v) || 'E-mail address must be valid'
   ],
   password1: [
- 
+    v => !!v || 'Please enter your
