@@ -34,4 +34,5 @@ const formRules = ref({
   ],
   password2: [
     v => !!v || 'Please confirm your password',
-    v => v.length >= 8 || 'Password mus
+    v => v.length >= 8 || 'Password must be at least 8 characters',
+    v => v === f
