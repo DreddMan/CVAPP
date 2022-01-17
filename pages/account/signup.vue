@@ -35,4 +35,8 @@ const formRules = ref({
   password2: [
     v => !!v || 'Please confirm your password',
     v => v.length >= 8 || 'Password must be at least 8 characters',
-    v => v === formData.value.password1 || 'Confirm passwor
+    v => v === formData.value.password1 || 'Confirm password must match password'
+  ]
+})
+
+const submitting 
