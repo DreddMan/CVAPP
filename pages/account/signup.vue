@@ -39,4 +39,5 @@ const formRules = ref({
   ]
 })
 
-const submitting 
+const submitting = ref(false)
+const errorMsg = r
