@@ -40,4 +40,7 @@ const formRules = ref({
 })
 
 const submitting = ref(false)
-const errorMsg = r
+const errorMsg = ref(null)
+const signUpForm = ref(null)
+
+const su
