@@ -43,4 +43,5 @@ const submitting = ref(false)
 const errorMsg = ref(null)
 const signUpForm = ref(null)
 
-const su
+const submit = async () => {
+  errorMsg.value = n
