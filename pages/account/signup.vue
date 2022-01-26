@@ -44,4 +44,5 @@ const errorMsg = ref(null)
 const signUpForm = ref(null)
 
 const submit = async () => {
-  errorMsg.value = n
+  errorMsg.value = null
+  const { valid } = await signUpForm.va
