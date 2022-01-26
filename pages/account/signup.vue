@@ -45,4 +45,6 @@ const signUpForm = ref(null)
 
 const submit = async () => {
   errorMsg.value = null
-  const { valid } = await signUpForm.va
+  const { valid } = await signUpForm.value.validate()
+  if (valid) {
+    submitting.valu
