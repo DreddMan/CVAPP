@@ -56,4 +56,5 @@ const submit = async () => {
 
     console.log(error.value)
 
-  
+    if (error.value) {
+      if (error.value
