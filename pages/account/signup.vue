@@ -50,4 +50,5 @@ const submit = async () => {
     submitting.value = true
 
     const { data, error } = await useFetch('/api/account/registration/', {
-      met
+      method: 'POST',
+      body: JSON.stringify(for
