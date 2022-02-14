@@ -57,4 +57,5 @@ const submit = async () => {
     console.log(error.value)
 
     if (error.value) {
-      if (error.value
+      if (error.value.status === 400) {
+        for (const key in f
