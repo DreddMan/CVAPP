@@ -58,4 +58,5 @@ const submit = async () => {
 
     if (error.value) {
       if (error.value.status === 400) {
-        for (const key in f
+        for (const key in formData.value) {
+          if (error.value.
