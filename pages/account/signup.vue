@@ -63,4 +63,5 @@ const submit = async () => {
             fieldErrors.value[key] = error.value.data[key][0]
           }
         }
-      
+        if (error.value.data.non_field_errors) {
+          err
