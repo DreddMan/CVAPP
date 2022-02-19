@@ -64,4 +64,4 @@ const submit = async () => {
           }
         }
         if (error.value.data.non_field_errors) {
-          err
+          errorMsg.value = error.value.data.non_field_error
