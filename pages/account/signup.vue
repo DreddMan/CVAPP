@@ -64,4 +64,7 @@ const submit = async () => {
           }
         }
         if (error.value.data.non_field_errors) {
-          errorMsg.value = error.value.data.non_field_error
+          errorMsg.value = error.value.data.non_field_errors[0]
+        }
+      } else {
+       
