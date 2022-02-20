@@ -67,4 +67,4 @@ const submit = async () => {
           errorMsg.value = error.value.data.non_field_errors[0]
         }
       } else {
-       
+        errorMsg.value = 'Something went wro
