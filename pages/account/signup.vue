@@ -70,4 +70,5 @@ const submit = async () => {
         errorMsg.value = 'Something went wrong. Please try again.'
       }
     } else {
-      $au
+      $auth.setUser(data.value.user)
+      n
