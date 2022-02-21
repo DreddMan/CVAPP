@@ -71,4 +71,7 @@ const submit = async () => {
       }
     } else {
       $auth.setUser(data.value.user)
-      n
+      navigateTo('/account/onboarding')
+    }
+
+    submi
