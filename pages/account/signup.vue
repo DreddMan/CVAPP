@@ -74,4 +74,8 @@ const submit = async () => {
       navigateTo('/account/onboarding')
     }
 
-    submi
+    submitting.value = false
+  }
+}
+
+const handleFieldUp
