@@ -85,4 +85,7 @@ const handleFieldUpdate = (field) => {
 
 <template>
   <v-card
-      style
+      style="height: 100vh"
+  >
+    <v-container>
+      <v-row
