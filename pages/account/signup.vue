@@ -91,4 +91,6 @@ const handleFieldUpdate = (field) => {
       <v-row>
         <v-col
             sm="9"
+            offset-sm="1"
+            md="6"
         
