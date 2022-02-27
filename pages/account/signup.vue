@@ -88,4 +88,7 @@ const handleFieldUpdate = (field) => {
       style="height: 100vh"
   >
     <v-container>
-      <v-row
+      <v-row>
+        <v-col
+            sm="9"
+        
