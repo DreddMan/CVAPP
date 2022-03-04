@@ -101,4 +101,5 @@ const handleFieldUpdate = (field) => {
           >
             <div class="text-center text-h4">Create your account</div>
             <v-card-text>
-          
+              <v-form ref="signUpForm" class="mt-5">
+     
