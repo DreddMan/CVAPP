@@ -99,4 +99,6 @@ const handleFieldUpdate = (field) => {
               class="mt-15"
               elevation="0"
           >
-            <div class="text-center text-h4">Create y
+            <div class="text-center text-h4">Create your account</div>
+            <v-card-text>
+          
