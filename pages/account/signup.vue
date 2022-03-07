@@ -103,4 +103,5 @@ const handleFieldUpdate = (field) => {
             <v-card-text>
               <v-form ref="signUpForm" class="mt-5">
                 <v-text-field
-                
+                    v-model="formData.username"
+            
