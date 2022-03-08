@@ -105,4 +105,5 @@ const handleFieldUpdate = (field) => {
                 <v-text-field
                     v-model="formData.username"
                     :rules="formRules.username"
-                    :er
+                    :error-messages="fieldErrors.username"
+       
