@@ -108,4 +108,5 @@ const handleFieldUpdate = (field) => {
                     :error-messages="fieldErrors.username"
                     label="User name"
                     variant="underlined"
-                    @update:modelV
+                    @update:modelValue="handleFieldUpdate('username')"
+           
