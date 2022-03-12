@@ -109,4 +109,5 @@ const handleFieldUpdate = (field) => {
                     label="User name"
                     variant="underlined"
                     @update:modelValue="handleFieldUpdate('username')"
-           
+                    clearable
+                ></v-text-f
