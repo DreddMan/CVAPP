@@ -116,4 +116,5 @@ const handleFieldUpdate = (field) => {
                     v-model="formData.email"
                     :rules="formRules.email"
                     :error-messages="fieldErrors.email"
-         
+                    label="Email"
+                    v
