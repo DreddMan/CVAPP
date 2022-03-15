@@ -118,4 +118,5 @@ const handleFieldUpdate = (field) => {
                     :error-messages="fieldErrors.email"
                     label="Email"
                     variant="underlined"
-                    @@update:mo
+                    @@update:modelValue="handleFieldUpdate('email')"
+ 
