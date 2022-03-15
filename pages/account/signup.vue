@@ -117,4 +117,5 @@ const handleFieldUpdate = (field) => {
                     :rules="formRules.email"
                     :error-messages="fieldErrors.email"
                     label="Email"
-                    v
+                    variant="underlined"
+                    @@update:mo
