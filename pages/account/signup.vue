@@ -119,4 +119,5 @@ const handleFieldUpdate = (field) => {
                     label="Email"
                     variant="underlined"
                     @@update:modelValue="handleFieldUpdate('email')"
- 
+                    clearable
+                ></v-
