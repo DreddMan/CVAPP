@@ -122,4 +122,5 @@ const handleFieldUpdate = (field) => {
                     clearable
                 ></v-text-field>
 
-                <v-text-fiel
+                <v-text-field
+                    v-model="formData.pa
