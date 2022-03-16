@@ -120,4 +120,6 @@ const handleFieldUpdate = (field) => {
                     variant="underlined"
                     @@update:modelValue="handleFieldUpdate('email')"
                     clearable
-                ></v-
+                ></v-text-field>
+
+                <v-text-fiel
