@@ -127,4 +127,5 @@ const handleFieldUpdate = (field) => {
                     :rules="formRules.password1"
                     :error-messages="fieldErrors.password1"
                     label="Password"
-                    variant=
+                    variant="underlined"
+                    @update:m
