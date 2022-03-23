@@ -129,4 +129,5 @@ const handleFieldUpdate = (field) => {
                     label="Password"
                     variant="underlined"
                     @update:modelValue="handleFieldUpdate('password1')"
-      
+                    clearable
+                ></v-text-field
