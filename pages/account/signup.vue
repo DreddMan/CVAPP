@@ -134,4 +134,5 @@ const handleFieldUpdate = (field) => {
 
                 <v-text-field
                     v-model="formData.password2"
-                    :rules="formRules
+                    :rules="formRules.password2"
+                    :error-message
