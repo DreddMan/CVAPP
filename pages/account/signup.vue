@@ -137,4 +137,5 @@ const handleFieldUpdate = (field) => {
                     :rules="formRules.password2"
                     :error-messages="fieldErrors.password2"
                     label="Confirm password"
-              
+                    variant="underlined"
+                    @u
