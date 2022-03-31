@@ -136,4 +136,5 @@ const handleFieldUpdate = (field) => {
                     v-model="formData.password2"
                     :rules="formRules.password2"
                     :error-messages="fieldErrors.password2"
-                  
+                    label="Confirm password"
+              
