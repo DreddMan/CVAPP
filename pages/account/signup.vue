@@ -138,4 +138,5 @@ const handleFieldUpdate = (field) => {
                     :error-messages="fieldErrors.password2"
                     label="Confirm password"
                     variant="underlined"
-                    @update:modelValue="handleField
+                    @update:modelValue="handleFieldUpdate('password2')"
+           
