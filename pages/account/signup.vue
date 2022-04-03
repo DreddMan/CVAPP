@@ -144,4 +144,6 @@ const handleFieldUpdate = (field) => {
 
               </v-form>
 
-              <div v-if="errorMsg" clas
+              <div v-if="errorMsg" class="text-red">{{ errorMsg }}</div>
+
+    
