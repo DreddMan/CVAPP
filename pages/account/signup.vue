@@ -149,4 +149,5 @@ const handleFieldUpdate = (field) => {
               <div
                   class="mt-5 d-flex justify-space-between"
               >
-                <v
+                <v-btn
+                    @click="navigateTo('/
