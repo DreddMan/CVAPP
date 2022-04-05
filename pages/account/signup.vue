@@ -147,4 +147,6 @@ const handleFieldUpdate = (field) => {
               <div v-if="errorMsg" class="text-red">{{ errorMsg }}</div>
 
               <div
-                  class="mt-5 d-flex justify
+                  class="mt-5 d-flex justify-space-between"
+              >
+                <v
