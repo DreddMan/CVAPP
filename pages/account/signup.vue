@@ -150,4 +150,5 @@ const handleFieldUpdate = (field) => {
                   class="mt-5 d-flex justify-space-between"
               >
                 <v-btn
-                    @click="navigateTo('/
+                    @click="navigateTo('/account/signin')"
+                    variant=
