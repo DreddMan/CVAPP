@@ -151,4 +151,6 @@ const handleFieldUpdate = (field) => {
               >
                 <v-btn
                     @click="navigateTo('/account/signin')"
-                    variant=
+                    variant="text"
+                    color="primary"
+    
