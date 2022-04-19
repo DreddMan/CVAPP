@@ -156,4 +156,5 @@ const handleFieldUpdate = (field) => {
                 >Sign in instead</v-btn>
 
                 <v-btn
-              
+                    size="large"
+                    color="pr
