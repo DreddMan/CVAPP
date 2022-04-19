@@ -158,4 +158,6 @@ const handleFieldUpdate = (field) => {
                 <v-btn
                     size="large"
                     color="primary"
-                    :loading="submit
+                    :loading="submitting"
+                    @click="submit"
+   
