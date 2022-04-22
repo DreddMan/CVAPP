@@ -1,1 +1,3 @@
-<scr
+<script setup>
+definePageMeta({
+  layout: 'vuet
