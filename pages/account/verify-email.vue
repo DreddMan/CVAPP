@@ -1,3 +1,5 @@
 <script setup>
 definePageMeta({
-  layout: 'vuet
+  layout: 'vuetify-app',
+  path: '/account/verify-email/:token',
+ 
