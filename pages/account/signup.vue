@@ -167,4 +167,6 @@ const handleFieldUpdate = (field) => {
           </v-card>
         </v-col>
       </v-row>
-    </v-c
+    </v-container>
+  </v-card>
+</template>
