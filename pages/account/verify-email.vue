@@ -4,4 +4,5 @@ definePageMeta({
   path: '/account/verify-email/:token',
   title: 'Verify Email'
 })
-const ro
+const route = useRoute()
+const verifying = ref(fals
