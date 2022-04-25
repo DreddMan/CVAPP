@@ -5,4 +5,7 @@ definePageMeta({
   title: 'Verify Email'
 })
 const route = useRoute()
-const verifying = ref(fals
+const verifying = ref(false)
+const status = ref('')
+
+const verifyEmai
