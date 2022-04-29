@@ -10,4 +10,4 @@ const status = ref('')
 
 const verifyEmail = async () => {
   verifying.value = true
-  co
+  const { data, error } = await useFetch
