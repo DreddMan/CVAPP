@@ -8,4 +8,6 @@ const route = useRoute()
 const verifying = ref(false)
 const status = ref('')
 
-const verifyEmai
+const verifyEmail = async () => {
+  verifying.value = true
+  co
