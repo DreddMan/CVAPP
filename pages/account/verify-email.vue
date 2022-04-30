@@ -10,4 +10,4 @@ const status = ref('')
 
 const verifyEmail = async () => {
   verifying.value = true
-  const { data, error } = await useFetch
+  const { data, error } = await useFetch(`/api/account/registration/verify-emai
