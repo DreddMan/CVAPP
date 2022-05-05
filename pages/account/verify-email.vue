@@ -14,3 +14,6 @@ const verifyEmail = async () => {
     method: 'POST',
     body: JSON.stringify({
       key: route.params.token
+    })
+  })
+  if (!error.value && data.value.d
