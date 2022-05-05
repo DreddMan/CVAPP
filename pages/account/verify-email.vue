@@ -16,4 +16,5 @@ const verifyEmail = async () => {
       key: route.params.token
     })
   })
-  if (!error.value && data.value.d
+  if (!error.value && data.value.detail === 'ok') {
+    status.v
