@@ -17,4 +17,7 @@ const verifyEmail = async () => {
     })
   })
   if (!error.value && data.value.detail === 'ok') {
-    status.v
+    status.value = 'success'
+  } else {
+    status.value = 'error'
+  }
