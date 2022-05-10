@@ -24,4 +24,9 @@ const verifyEmail = async () => {
   verifying.value = false
 }
 
-onNuxtReady(
+onNuxtReady(() => {
+  verifyEmail()
+})
+</script>
+
+<tem
