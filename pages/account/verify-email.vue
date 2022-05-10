@@ -21,3 +21,7 @@ const verifyEmail = async () => {
   } else {
     status.value = 'error'
   }
+  verifying.value = false
+}
+
+onNuxtReady(
