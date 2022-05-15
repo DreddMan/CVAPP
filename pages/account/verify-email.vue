@@ -31,4 +31,6 @@ onNuxtReady(() => {
 
 <template>
   <v-container class="h-100vh">
-    <v-r
+    <v-row
+        class="fill-height"
+        align
