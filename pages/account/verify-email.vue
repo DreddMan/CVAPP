@@ -34,4 +34,7 @@ onNuxtReady(() => {
     <v-row
         class="fill-height"
         align-content="center"
-        justif
+        justify="center"
+    >
+      <v-col
+          cl
