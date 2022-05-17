@@ -40,3 +40,7 @@ onNuxtReady(() => {
           class="text-subtitle-1 text-center"
           cols="12"
           v-if="verifying"
+      >
+        Verifying your email
+      </v-col>
+  
