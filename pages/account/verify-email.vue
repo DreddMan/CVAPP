@@ -38,4 +38,5 @@ onNuxtReady(() => {
     >
       <v-col
           class="text-subtitle-1 text-center"
-      
+          cols="12"
+          v-if="verifying"
