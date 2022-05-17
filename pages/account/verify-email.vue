@@ -37,4 +37,5 @@ onNuxtReady(() => {
         justify="center"
     >
       <v-col
-          cl
+          class="text-subtitle-1 text-center"
+      
