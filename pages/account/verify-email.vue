@@ -43,4 +43,6 @@ onNuxtReady(() => {
       >
         Verifying your email
       </v-col>
-  
+      <v-col
+          cols="6"
+          v-if="ve
