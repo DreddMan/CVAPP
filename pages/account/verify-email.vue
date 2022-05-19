@@ -47,4 +47,6 @@ onNuxtReady(() => {
           cols="6"
           v-if="verifying"
       >
-        <v-progress-lin
+        <v-progress-linear
+            color="deep-purple-accent-4"
+           
