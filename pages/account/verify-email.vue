@@ -45,4 +45,6 @@ onNuxtReady(() => {
       </v-col>
       <v-col
           cols="6"
-          v-if="ve
+          v-if="verifying"
+      >
+        <v-progress-lin
