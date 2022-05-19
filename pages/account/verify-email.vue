@@ -49,4 +49,6 @@ onNuxtReady(() => {
       >
         <v-progress-linear
             color="deep-purple-accent-4"
-           
+            indeterminate
+            rounded
+            h
