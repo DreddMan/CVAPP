@@ -51,4 +51,6 @@ onNuxtReady(() => {
             color="deep-purple-accent-4"
             indeterminate
             rounded
-            h
+            height="6"
+        ></v-progress-linear>
+    
