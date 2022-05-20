@@ -53,4 +53,6 @@ onNuxtReady(() => {
             rounded
             height="6"
         ></v-progress-linear>
-    
+      </v-col>
+      <v-col
+          cols="
