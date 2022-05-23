@@ -61,4 +61,5 @@ onNuxtReady(() => {
       >
         <h2 class="text-h4">
           Your email has been verified.
-      
+        </h2>
+        <p class="text-sub
