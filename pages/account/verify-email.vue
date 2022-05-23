@@ -60,3 +60,5 @@ onNuxtReady(() => {
           class="text-center"
       >
         <h2 class="text-h4">
+          Your email has been verified.
+      
