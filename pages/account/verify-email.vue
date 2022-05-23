@@ -57,4 +57,6 @@ onNuxtReady(() => {
       <v-col
           cols="12"
           v-if="status === 'success'"
-          class
+          class="text-center"
+      >
+        <h2 class="text-h4">
