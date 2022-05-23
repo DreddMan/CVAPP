@@ -55,4 +55,6 @@ onNuxtReady(() => {
         ></v-progress-linear>
       </v-col>
       <v-col
-          cols="
+          cols="12"
+          v-if="status === 'success'"
+          class
