@@ -62,4 +62,5 @@ onNuxtReady(() => {
         <h2 class="text-h4">
           Your email has been verified.
         </h2>
-        <p class="text-sub
+        <p class="text-subtitle-1">
+          You can now sign in t
