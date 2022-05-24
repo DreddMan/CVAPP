@@ -66,3 +66,5 @@ onNuxtReady(() => {
           You can now sign in to your account.
         </p>
         <v-btn
+            color="primary"
+          
