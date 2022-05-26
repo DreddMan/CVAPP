@@ -70,4 +70,6 @@ onNuxtReady(() => {
             variant="text"
             @click="navigateTo('/account/login')"
         >
-  
+          Sign in
+        </v-btn>
+      
