@@ -68,4 +68,6 @@ onNuxtReady(() => {
         <v-btn
             color="primary"
             variant="text"
-            @click="nav
+            @click="navigateTo('/account/login')"
+        >
+  
