@@ -72,4 +72,6 @@ onNuxtReady(() => {
         >
           Sign in
         </v-btn>
-      
+      </v-col>
+      <v-col
+          cols="12"
