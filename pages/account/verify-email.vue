@@ -76,4 +76,6 @@ onNuxtReady(() => {
       <v-col
           cols="12"
           v-if="status === 'error'"
- 
+          class="text-center"
+      >
+        
