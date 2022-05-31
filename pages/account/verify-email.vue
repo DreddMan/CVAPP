@@ -78,4 +78,5 @@ onNuxtReady(() => {
           v-if="status === 'error'"
           class="text-center"
       >
-        
+        <h2 class="text-h4">
+          There w
