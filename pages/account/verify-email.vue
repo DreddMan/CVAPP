@@ -80,3 +80,6 @@ onNuxtReady(() => {
       >
         <h2 class="text-h4">
           There was an error verifying your email.
+        </h2>
+        <v-btn
+        
