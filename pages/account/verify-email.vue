@@ -79,4 +79,4 @@ onNuxtReady(() => {
           class="text-center"
       >
         <h2 class="text-h4">
-          There w
+          There was an error verifying your email.
