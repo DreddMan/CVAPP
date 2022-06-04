@@ -82,4 +82,5 @@ onNuxtReady(() => {
           There was an error verifying your email.
         </h2>
         <v-btn
-        
+            color="primary"
+            variant="text
