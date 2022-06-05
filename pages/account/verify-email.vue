@@ -83,4 +83,5 @@ onNuxtReady(() => {
         </h2>
         <v-btn
             color="primary"
-            variant="text
+            variant="text"
+            @click="navigateTo('/account/onb
