@@ -84,4 +84,7 @@ onNuxtReady(() => {
         <v-btn
             color="primary"
             variant="text"
-            @click="navigateTo('/account/onb
+            @click="navigateTo('/account/onboarding?resend=1')"
+        >
+          Resend email
+     
