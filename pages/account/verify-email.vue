@@ -90,4 +90,8 @@ onNuxtReady(() => {
         </v-btn>
       </v-col>
     </v-row>
-  </v
+  </v-container>
+</template>
+
+<style scoped>
+.h-100vh 
