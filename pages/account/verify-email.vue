@@ -87,4 +87,7 @@ onNuxtReady(() => {
             @click="navigateTo('/account/onboarding?resend=1')"
         >
           Resend email
-     
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v
