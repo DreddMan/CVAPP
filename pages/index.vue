@@ -155,3 +155,50 @@ const usePrompt = (prompt) => {
 }
 
 </script>
+
+<template>
+  <div
+      v-if="currentConversation.messages.length > 0"
+      ref="chatWindow"
+  >
+    <v-container>
+      <v-row>
+        <v-col
+            v-for="(message, index) in currentConversation.messages" :key="index"
+            cols="12"
+        >
+          <div
+              class="d-flex"
+              :class="message.is_bot ? 'justify-start mr-16' : 'justify-end ml-16'"
+          >
+            <v-card
+                :color="message.is_bot ? '' : 'primary'"
+                rounded="lg"
+                elevation="2"
+            >
+              <v-card-text>
+                <MsgContent :content="message.message" />
+              </v-card-text>
+
+<!--              <v-card-actions-->
+<!--                  v-if="message.is_bot"-->
+<!--              >-->
+<!--                <v-spacer></v-spacer>-->
+<!--                <v-tooltip text="Copy">-->
+<!--                  <template v-slot:activator="{ props }">-->
+<!--                    <v-btn v-bind="props" icon="content_copy"></v-btn>-->
+<!--                  </template>-->
+<!--                </v-tooltip>-->
+<!--              </v-card-actions>-->
+            </v-card>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <div ref="grab" class="w-100" style="height: 200px;"></div>
+  </div>
+  <Welcome v-else />
+  <v-footer app class="d-flex flex-column">
+    <div class="px-md-16 w-100 d-flex align-center">
+      <Prompt v-show="!fetchingResponse" :use-prompt="usePrompt" />
