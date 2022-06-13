@@ -107,3 +107,51 @@ const fetchReply = async (message, parentMessageId) => {
         scrollChatWindow()
       },
     })
+  } catch (err) {
+    console.log(err)
+    abortFetch()
+    showSnackbar(err.message)
+  }
+}
+
+const currentConversation = useConversion()
+
+const grab = ref(null)
+const scrollChatWindow = () => {
+  if (grab.value === null) {
+    return;
+  }
+  grab.value.scrollIntoView({behavior: 'smooth'})
+}
+
+
+const send = (message) => {
+  fetchingResponse.value = true
+  let parentMessageId = null
+  if (currentConversation.value.messages.length > 0) {
+    const lastMessage = currentConversation.value.messages[currentConversation.value.messages.length - 1]
+    if (lastMessage.is_bot && lastMessage.id !== null) {
+      parentMessageId = lastMessage.id
+    }
+  }
+  currentConversation.value.messages.push({parentMessageId: parentMessageId, message: message})
+  fetchReply(message, parentMessageId)
+  scrollChatWindow()
+}
+const stop = () => {
+  abortFetch()
+}
+
+const snackbar = ref(false)
+const snackbarText = ref('')
+const showSnackbar = (text) => {
+  snackbarText.value = text
+  snackbar.value = true
+}
+
+const editor = ref(null)
+const usePrompt = (prompt) => {
+  editor.value.usePrompt(prompt)
+}
+
+</script>
