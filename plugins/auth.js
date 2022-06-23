@@ -52,3 +52,21 @@ export default defineNuxtPlugin(() => {
         }
 
     }
+
+    const auth = new Auth()
+
+    addRouteMiddleware('auth', async (to, from) => {
+        if (!auth.loginIn.value) {
+            const error = await auth.fetchUser()
+            if (error) {
+                return await auth.redirectToLogin(to.fullPath)
+            }
+        }
+    })
+
+    return {
+        provide: {
+            auth
+        }
+    }
+})
