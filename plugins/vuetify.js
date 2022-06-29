@@ -5,4 +5,6 @@ import { md3 } from 'vuetify/blueprints'
 // import * as directives from 'vuetify/directives'
 
 export default defineNuxtPlugin(nuxtApp => {
-    const vuetify = createV
+    const vuetify = createVuetify({
+        ssr: true,
+        
