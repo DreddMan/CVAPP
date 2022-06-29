@@ -7,4 +7,6 @@ import { md3 } from 'vuetify/blueprints'
 export default defineNuxtPlugin(nuxtApp => {
     const vuetify = createVuetify({
         ssr: true,
-        
+        blueprint: md3,
+        icons: {
+            de
