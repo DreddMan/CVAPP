@@ -4,4 +4,5 @@ import * as components from 'vuetify/components'
 import { md3 } from 'vuetify/blueprints'
 // import * as directives from 'vuetify/directives'
 
-export default defineNu
+export default defineNuxtPlugin(nuxtApp => {
+    const vuetify = createV
