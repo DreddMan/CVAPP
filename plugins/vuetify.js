@@ -13,4 +13,7 @@ export default defineNuxtPlugin(nuxtApp => {
             aliases,
             sets: {
                 md
-        
+            }
+        },
+        components,
+        /
