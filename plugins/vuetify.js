@@ -9,4 +9,6 @@ export default defineNuxtPlugin(nuxtApp => {
         ssr: true,
         blueprint: md3,
         icons: {
-            de
+            defaultSet: 'md',
+            aliases,
+          
