@@ -11,4 +11,6 @@ export default defineNuxtPlugin(nuxtApp => {
         icons: {
             defaultSet: 'md',
             aliases,
-          
+            sets: {
+                md
+        
