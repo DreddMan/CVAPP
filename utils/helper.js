@@ -8,4 +8,5 @@ export const getDefaultConversionData = () => {
     }
 }
 
-export const ge
+export const getConversions = async () => {
+    const {
