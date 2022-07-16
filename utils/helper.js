@@ -4,4 +4,8 @@ export const getDefaultConversionData = () => {
         id: null,
         topic: null,
         messages: [],
-        loadingMessag
+        loadingMessages: false,
+    }
+}
+
+export const ge
