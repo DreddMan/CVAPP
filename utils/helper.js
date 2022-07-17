@@ -9,4 +9,4 @@ export const getDefaultConversionData = () => {
 }
 
 export const getConversions = async () => {
-    const {
+    const { data, error } = await useAuthFetch('/api
