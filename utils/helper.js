@@ -13,4 +13,7 @@ export const getConversions = async () => {
     if (!error.value) {
         return data.value
     }
-    r
+    return []
+}
+
+export const createNewConv
