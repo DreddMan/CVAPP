@@ -9,4 +9,5 @@ export const getDefaultConversionData = () => {
 }
 
 export const getConversions = async () => {
-    const { data, error } = await useAuthFetch('/api
+    const { data, error } = await useAuthFetch('/api/chat/conversations/')
+    if (!error.va
