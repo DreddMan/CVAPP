@@ -16,4 +16,5 @@ export const getConversions = async () => {
     return []
 }
 
-export const createNewConv
+export const createNewConversion = () => {
+    const conversation = useConv
