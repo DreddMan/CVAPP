@@ -18,4 +18,7 @@ export const getConversions = async () => {
 
 export const createNewConversion = () => {
     const conversation = useConversion()
-    conversation.value = getDefaultConversi
+    conversation.value = getDefaultConversionData()
+}
+
+export const openConversationMe
