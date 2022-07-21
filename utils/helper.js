@@ -17,4 +17,5 @@ export const getConversions = async () => {
 }
 
 export const createNewConversion = () => {
-    const conversation = useConv
+    const conversation = useConversion()
+    conversation.value = getDefaultConversi
