@@ -21,4 +21,5 @@ export const createNewConversion = () => {
     conversation.value = getDefaultConversionData()
 }
 
-export const openConversationMe
+export const openConversationMessages = async (currentConversation) => {
+    con
