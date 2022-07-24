@@ -23,4 +23,5 @@ export const createNewConversion = () => {
 
 export const openConversationMessages = async (currentConversation) => {
     const conversation = useConversion()
-    conversation.value = Object.assign(conve
+    conversation.value = Object.assign(conversation.value, currentConversation)
+    conversati
