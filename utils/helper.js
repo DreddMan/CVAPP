@@ -27,4 +27,6 @@ export const openConversationMessages = async (currentConversation) => {
     conversation.value.loadingMessages = true
     const { data, error } = await useAuthFetch('/api/chat/messages/?conversationId=' + currentConversation.id)
     if (!error.value) {
-        conversation.
+        conversation.value.messages = data.value
+    }
+    conversation
