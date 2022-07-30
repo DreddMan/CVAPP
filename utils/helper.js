@@ -32,4 +32,4 @@ export const openConversationMessages = async (currentConversation) => {
     conversation.value.loadingMessages = true
 }
 
-export con
+export const genTitle = async (conversationId) => {
