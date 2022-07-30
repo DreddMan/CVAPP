@@ -29,4 +29,7 @@ export const openConversationMessages = async (currentConversation) => {
     if (!error.value) {
         conversation.value.messages = data.value
     }
-    conversation
+    conversation.value.loadingMessages = true
+}
+
+export con
