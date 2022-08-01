@@ -33,3 +33,4 @@ export const openConversationMessages = async (currentConversation) => {
 }
 
 export const genTitle = async (conversationId) => {
+    const { data, error } = 
