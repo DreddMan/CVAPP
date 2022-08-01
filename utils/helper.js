@@ -34,4 +34,6 @@ export const openConversationMessages = async (currentConversation) => {
 
 export const genTitle = async (conversationId) => {
     const { data, error } = await useAuthFetch('/api/gen_title/', {
- 
+        method: 'POST',
+        body: {
+       
