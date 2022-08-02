@@ -37,4 +37,6 @@ export const genTitle = async (conversationId) => {
         method: 'POST',
         body: {
             conversationId: conversationId
-     
+        }
+    })
+    if (!error.value) 
