@@ -39,4 +39,6 @@ export const genTitle = async (conversationId) => {
             conversationId: conversationId
         }
     })
-    if (!error.value) 
+    if (!error.value) {
+        const conversation = {
+          
