@@ -42,4 +42,6 @@ export const genTitle = async (conversationId) => {
     if (!error.value) {
         const conversation = {
             id: conversationId,
-            topic: data.
+            topic: data.value.title,
+        }
+        const conv
