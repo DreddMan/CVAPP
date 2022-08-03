@@ -45,4 +45,5 @@ export const genTitle = async (conversationId) => {
             topic: data.value.title,
         }
         const conversations = useConversions()
-        // prepend to co
+        // prepend to conversations
+        conversations.value =
