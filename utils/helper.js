@@ -46,4 +46,4 @@ export const genTitle = async (conversationId) => {
         }
         const conversations = useConversions()
         // prepend to conversations
-        conversations.value =
+        conversations.value = [conversation, ...conversations.value]
