@@ -33,3 +33,21 @@ export const setCurrentModel = (val) => {
     set(STORAGE_KEY.CURRENT_OPENAI_MODEL, val)
     model.value = val
 }
+
+export const getCurrentModel = () => {
+    let model = get(STORAGE_KEY.CURRENT_OPENAI_MODEL)
+    if (!model) {
+        model = DEFAULT_OPENAI_MODEL
+    }
+    return model
+}
+
+export const setApiKey = (val) => {
+    const apiKey = useApiKey()
+    set(STORAGE_KEY.OPENAI_API_KEY, val)
+    apiKey.value = val
+}
+
+export const getStoredApiKey = () => {
+    return get(STORAGE_KEY.OPENAI_API_KEY)
+}
