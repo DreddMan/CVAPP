@@ -47,3 +47,6 @@ export const genTitle = async (conversationId) => {
         const conversations = useConversions()
         // prepend to conversations
         conversations.value = [conversation, ...conversations.value]
+        return data.value.title
+    }
+    re
