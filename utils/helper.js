@@ -49,4 +49,5 @@ export const genTitle = async (conversationId) => {
         conversations.value = [conversation, ...conversations.value]
         return data.value.title
     }
-    re
+    return null
+}
