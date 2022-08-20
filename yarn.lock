@@ -522,3 +522,28 @@
   integrity sha512-klXrYT9VXyKEXsD6UY3pShg0O5MPC07n0TZ5RrSs5ry6T1eZVolIFGJi9c3qcDrh1qjJxgikRnPBmD7qGDqbjw==
   dependencies:
     "@intlify/message-compiler" next
+    "@intlify/shared" next
+    jsonc-eslint-parser "^1.0.1"
+    source-map "0.6.1"
+    yaml-eslint-parser "^0.3.2"
+
+"@intlify/core-base@9.3.0-beta.16":
+  version "9.3.0-beta.16"
+  resolved "https://registry.npmmirror.com/@intlify/core-base/-/core-base-9.3.0-beta.16.tgz#bd993fde9c0a96f081a5805a78bece953bfdce9e"
+  integrity sha512-BoAxVoPIJoPKCCMdsuNXKaaJxvetvHrW2KA43IpkwgPd2/w6zPebh/+v8e4zpXKjFVSgcF97zP87KeVcM/Lxwg==
+  dependencies:
+    "@intlify/devtools-if" "9.3.0-beta.16"
+    "@intlify/message-compiler" "9.3.0-beta.16"
+    "@intlify/shared" "9.3.0-beta.16"
+    "@intlify/vue-devtools" "9.3.0-beta.16"
+
+"@intlify/devtools-if@9.3.0-beta.16":
+  version "9.3.0-beta.16"
+  resolved "https://registry.npmmirror.com/@intlify/devtools-if/-/devtools-if-9.3.0-beta.16.tgz#fab2bf0166686e998c9a1539e1eff1e07ee2beb6"
+  integrity sha512-9WXn8YMAnL/DHdoWqCy6yLTXcLFxd8eXB9UNsViQA5JJV7neR+yahr+23X1wP0prhG338MruxAu65khRf+AJCw==
+  dependencies:
+    "@intlify/shared" "9.3.0-beta.16"
+
+"@intlify/message-compiler@9.3.0-beta.16", "@intlify/message-compiler@next":
+  version "9.3.0-beta.16"
+  resolved "https://registry.npmmirror.com/@intlify/message-compiler/-/message-compiler-9.3.0-beta.16.tgz#335f7bdb06cfb84d04a1a1c1d6eff2532dfd88e7"
