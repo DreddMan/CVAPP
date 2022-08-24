@@ -719,3 +719,46 @@
     hash-sum "^2.0.0"
     ignore "^5.2.4"
     jiti "^1.17.0"
+    knitwork "^1.0.0"
+    lodash.template "^4.5.0"
+    mlly "^1.1.0"
+    pathe "^1.1.0"
+    pkg-types "^1.0.1"
+    scule "^1.0.0"
+    semver "^7.3.8"
+    unctx "^2.1.1"
+    unimport "^2.2.4"
+    untyped "^1.2.2"
+
+"@nuxt/kit@^3.0.0":
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/@nuxt/kit/-/kit-3.1.2.tgz#bf5f932b8a82f40bcfec4c1037021f0a75df4582"
+  integrity sha512-m8/AF8hBJiG7aTx2CpiDGeLYYz30fUoPbJ9XiSmHqRIXv1goAFWHSkzWfRNEsoAAbMHf76oB917wVUQ3VSSQHg==
+  dependencies:
+    "@nuxt/schema" "3.1.2"
+    c12 "^1.1.0"
+    consola "^2.15.3"
+    defu "^6.1.2"
+    globby "^13.1.3"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.16.2"
+    knitwork "^1.0.0"
+    lodash.template "^4.5.0"
+    mlly "^1.1.0"
+    pathe "^1.1.0"
+    pkg-types "^1.0.1"
+    scule "^1.0.0"
+    semver "^7.3.8"
+    unctx "^2.1.1"
+    unimport "^2.1.0"
+    untyped "^1.2.2"
+
+"@nuxt/schema@3.1.2":
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/@nuxt/schema/-/schema-3.1.2.tgz#a916ecfa96c04553403f7da8d1e7058f65cb3ad1"
+  integrity sha512-wru9LhRXTa6WQlx7c0oYrtvJY7TiVlkBKXY5Rsmfo0StJuWohgZiReu9fu6z6GU4MzZlX25TVjwvq9Q7bNVbSQ==
+  dependencies:
+    c12 "^1.1.0"
+    create-require "^1.1.1"
+    defu "^6.1.2"
