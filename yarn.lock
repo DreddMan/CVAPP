@@ -4352,3 +4352,39 @@ unimport@^2.1.0:
     unplugin "^1.0.1"
 
 unimport@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.npmmirror.com/unimport/-/unimport-2.2.4.tgz#3d0c7fb354e54ba277e58725aac73fbebabee0c7"
+  integrity sha512-qMgmeEGqqrrmEtm0dqxMG37J6xBtrriqxq9hILvDb+e6l2F0yTnJomLoCCp0eghLR7bYGeBsUU5Y0oyiUYhViw==
+  dependencies:
+    "@rollup/pluginutils" "^5.0.2"
+    escape-string-regexp "^5.0.0"
+    fast-glob "^3.2.12"
+    local-pkg "^0.4.3"
+    magic-string "^0.27.0"
+    mlly "^1.1.0"
+    pathe "^1.1.0"
+    pkg-types "^1.0.1"
+    scule "^1.0.0"
+    strip-literal "^1.0.0"
+    unplugin "^1.0.1"
+
+universalify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
+  integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
+
+unplugin@^1.0.0, unplugin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/unplugin/-/unplugin-1.0.1.tgz#83b528b981cdcea1cad422a12cd02e695195ef3f"
+  integrity sha512-aqrHaVBWW1JVKBHmGo33T5TxeL0qWzfvjWokObHA9bYmN7eNDkwOxmLjhioHl9878qDFMAaT51XNroRyuz7WxA==
+  dependencies:
+    acorn "^8.8.1"
+    chokidar "^3.5.3"
+    webpack-sources "^3.2.3"
+    webpack-virtual-modules "^0.5.0"
+
+unstorage@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.npmmirror.com/unstorage/-/unstorage-1.1.4.tgz#a69bd90e14b8e7aac5e468d6b0f193256d10309f"
+  integrity sha512-nrnCoWN8ewaZrwz5yf7QGkMn0FDoVer6yGIR56wvocNzAmZi1vXOnCaBxueB3Uu/SqNSH5N/ww41t6jNT8XccA==
+  dependencies:
